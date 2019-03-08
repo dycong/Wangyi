@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=0.5, maximum-scale=0.5, minimum-scale=0.5, user-scalable=no viewport-fit=cover">
+
+  <title>wangyi</title>
+  <link rel="stylesheet" href="/static/css/reset.css">
+  <link rel="stylesheet" href="http://at.alicdn.com/t/font_1075374_1z20uxb06o.css">
+  <script>
+
+    // if ('addEventListener' in document) {
+    //   document.addEventListener('DOMContentLoaded', function () {
+    //     FastClick.attach(document.body);
+    //   }, false);
+    // }
+    !(function () {
+      var width = document.documentElement.clientWidth;
+      var styleNode = document.createElement('style');
+      styleNode.innerHTML = 'html{font-size: ' + width / 10 + 'px !important;}';
+      document.head.appendChild(styleNode);
+    })();
+
+    if (!window.Promise) {
+      document.writeln('<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"' + '>' + '<' + '/' + 'script>');
+    }
+  </script>
+</head>
+<body>
+<div id="app"></div>
+<!-- built files will be auto injected -->
+</body>
+</html>
