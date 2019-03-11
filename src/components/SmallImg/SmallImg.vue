@@ -5,23 +5,23 @@
         <div class="info">
           <div class="name">
             <span class="ava">
-              <img src="https://yanxuan.nosdn.127.net/6bbce2ec26816a0068fa1f76c9d4ef77.png?imageView&quality=65&thumbnail=56y56" alt="">
+              <img :src="topic.avatar" alt="">
             </span>
-            <span>name</span>
+            <span>{{topic.nickname}}</span>
           </div>
           <div class="title">
-            两种意见|吃过猫山王阿萨德刚发斯蒂芬斯
+            {{topic.title}}
           </div>
           <div class="desc">
-            马来西亚猫山王榴莲
+            {{topic.subtitle}}
           </div>
           <div class="watch">
             <i class="icon iconfont icon-tuxiangshibie"></i>
-            <span>71.8k看过</span>
+            <span>{{topic.readCount}}看过</span>
           </div>
         </div>
         <div class="pic">
-          <img src="https://yanxuan.nosdn.127.net/d492c3b3aef955de4f53e846e50d0d62.jpg?imageView&quality=65&thumbnail=272y272" alt="">
+          <img :src="topic.picUrl" alt="">
         </div>
       </a>
     </div>
@@ -29,18 +29,17 @@
 </template>
 
 <script>
-  import {reqShiwuData} from '../../api'
 
   export default {
+    props:{
+      topic:Object
+    },
     data() {
       return{
-        StyleTwo:[]
+
       }
     },
-    async mounted(){
-      const result = await reqShiwuData()
-      // console.log('SmallImg',result.data.Manual)
-    }
+
   }
 </script>
 
@@ -73,6 +72,9 @@
             height 54px
             margin-right 12px
             border 0.01rem solid #d9d9d9
+            img
+              width 100%
+              height 100%
         .title
           width 100%
           font-size 0.48rem
@@ -115,6 +117,9 @@
         border-radius 0.16rem
         height 272px
         width 272px
+        img
+          width 100%
+          height 100%
 
 .iconfont
   font-size 36px

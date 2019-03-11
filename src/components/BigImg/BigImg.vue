@@ -4,19 +4,19 @@
       <a href="">
         <div class="avatar">
           <span class="ava">
-            <img src="https://yanxuan.nosdn.127.net/52bbfdc43780710303d7fceba3e382ec.png?imageView&quality=65&thumbnail=56y56" alt="">
+            <img :src="topic.avatar" alt="">
           </span>
-          <span>作者</span>
+          <span>{{topic.nickname}}</span>
         </div>
         <div class="title">
-          这些断货王平时等到阿斯顿发送到发送到发生了科技
+          {{topic.title}}
         </div>
         <div class="pic">
-          <img src="https://yanxuan.nosdn.127.net/7b8f18db78d572f036875a58529f6a16.jpg?imageView&quality=65&thumbnail=690y376" alt="">
+          <img :src="topic.picUrl" alt="">
         </div>
         <div class="watch">
           <i class="icon iconfont icon-tuxiangshibie"></i>
-          <span>111人看过</span>
+          <span>{{topic.readCount}}人看过</span>
         </div>
       </a>
     </div>
@@ -24,17 +24,18 @@
 </template>
 
 <script>
-  import {reqShiwuData} from '../../api'
 
   export default {
+    props:{
+      topic:Object
+    },
     data() {
       return{
-        StyleOne:[]
+
       }
     },
     async mounted(){
-      const result = await reqShiwuData()
-      // console.log('BigImg',result.data.Manual)
+
     }
   }
 </script>
@@ -56,6 +57,9 @@
     font-size 0.4rem
     text-overflow ellipsis
     white-space nowrap
+    img
+      width 100%
+      height 100%
     .ava
       display inline-block
       overflow hidden
@@ -79,6 +83,9 @@
     overflow hidden
     border-radius 0.12rem
     position: relative
+    img
+      width 100%
+      height 100%
   .watch
     margin-bottom -0.16rem
     font-size 0.3rem

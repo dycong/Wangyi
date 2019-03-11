@@ -12,7 +12,7 @@
       </span>
       <span>分类</span>
     </span>
-    <span class="footer_item" :class="{on:$route.path === '/shiwu/find'}" @click="goTo('/shiwu')">
+    <span class="footer_item" :class="{on:$route.path.includes('/find')}" @click="goTo('/find/tab/0')">
       <span class="item_icon">
         <i class="iconfont icon-liwu"></i>
       </span>

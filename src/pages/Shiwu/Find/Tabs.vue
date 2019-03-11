@@ -1,69 +1,100 @@
 <template>
   <div class="container">
-    <Header>
-      <div class="header-wrap">
-        <div class="home">
-          <a class="iconfont icon-shouye" href="/home"></a>
-        </div>
-        <div class="center">
-          <router-link to="/find/tab">
-            <a class="item active">发现</a>
-          </router-link>
-          <router-link to="/zhenxuan">
-            <a class="item" :class="{active:$route.path === '/zhenxuan'}">甄选家</a>
-          </router-link>
-        </div>
-        <div class="right">
-          <a class="iconfont icon-sousuo" href="/search"></a>
-          <a class="iconfont icon-gouwuche" href="/cart"></a>
-        </div>
-      </div>
-    </Header>
-    <div class="list">
-      <div class="list-wrap">
-        <div class="item-wrap">
-          <li class="item" :href="tab.linkUrl" v-for="(tab, index) in tabs" :key="index" :class="{active: +$route.params.id === index}">
-            <router-link :to="`/find/tab/${index}`">
-              {{tab.tabName}}
-            </router-link>
-          </li>
-        </div>
+
+    <!--推荐-->
+    <div class="content" v-if="tabId === 0">
+      <div v-for="(item, index) in Manual" :key="index">
+        <li v-for="(topic, index) in item.topics" :key="index" >
+          <BigImg v-if="topic.style === 1" :topic="topic"/>
+          <SmallImg v-if="topic.style === 2" :topic="topic"/>
+        </li>
       </div>
     </div>
-    <RouterView/>
+    <!--女王节礼物-->
+    <div class="content" v-if="tabId === 1">
+      <div v-for="(item, index) in Manual" :key="index">
+        <li v-for="(topic, index) in item.topics" :key="index" >
+          <BigImg v-if="topic.style === 2" :topic="topic"/>
+          <SmallImg v-if="topic.style === 1" :topic="topic"/>
+        </li>
+      </div>
+    </div>
+    <!--收纳秘诀-->
+    <div class="content" v-if="tabId === 2">
+      收纳秘诀
+    </div>
+    <!--晒单-->
+    <div class="content" v-if="tabId === 3">
+      晒单
+    </div>
+    <!--达人-->
+    <div class="content" v-if="tabId === 4">
+      <div v-for="(item, index) in Manual" :key="index">
+        <li v-for="(topic, index) in item.topics" :key="index" >
+          <BigImg v-if="topic.style === 1" :topic="topic"/>
+          <SmallImg v-if="topic.style === 2" :topic="topic"/>
+        </li>
+      </div>
+    </div>
+    <!--HOME-->
+    <div class="content" v-if="tabId === 5">
+      <div>
+        <li v-for="(item, index) in Home" :key="index" >
+          <Home :item="item"/>
+        </li>
+      </div>
+    </div>
+
   </div>
 </template>
 
 <script>
   import {reqShiwuData} from '../../../api/index'
-  import BScroll from 'better-scroll'
+
+  import BigImg from '../../../components/BigImg/BigImg.vue'
+  import SmallImg from '../../../components/SmallImg/SmallImg.vue'
+  import Home from '../../../components/Home/Home.vue'
 
   export default {
     data () {
       return {
-        tabs:[],
+        Manual: [],
+        Home:[],
+        Talent:[]
       }
     },
     async mounted () {
       const result = await reqShiwuData()
-      this.tabs = result.data.tabs.data
 
-      this.$nextTick(() => {
-        this._initScroll()
-      })
+      this.Manual = result.data.Manual.data
+      this.Home = result.data.Home.data.result
+      this.Talent = result.data.Talent
+      console.log('this.Talent', this.Talent)
+      // console.log('this.Home',this.Home)
+      // console.log('this.Manual---',this.Manual)
+      // console.log(this.Manual[0].topics)
+
     },
-    methods:{
-      // 初始化滑动
-      _initScroll () {
-        new BScroll('.list-wrap', {
-          scrollX:true,
-          click: true
-        })
-      },
+    computed: {
+      tabId () {
+        if (this.$route.params.id === '0') {
+          return 0
+        } else if (this.$route.params.id === '1') {
+          return 1
+        } else if (this.$route.params.id === '2') {
+          return 2
+        } else if (this.$route.params.id === '3') {
+          return 3
+        } else if (this.$route.params.id === '4') {
+          return 4
+        } else if (this.$route.params.id === '5') return 5
+      }
     },
 
     components: {
-
+      BigImg,
+      SmallImg,
+      Home
     }
   }
 </script>
@@ -132,7 +163,6 @@
           margin-right 0.04rem
           display block
 
-
     .list
       z-index 20
       display flex
@@ -144,6 +174,7 @@
       position: fixed
       left 0
       top 100px
+
       .list-wrap
         flex 5
         display flex
@@ -153,10 +184,12 @@
         box-sizing content-box
         height 72px
         padding-bottom 20px
+
         .item-wrap
           white-space nowrap
           display flex
           height 100%
+
           .item
             height 72px
             line-height 72px
@@ -165,9 +198,14 @@
             margin 0 0.2rem
             vertical-align middle
             display inline-block
+
             &.active
               border-bottom 0.04rem solid #B4282D
               color #B4282D
+
+    .content
+      margin-top 180px
+      margin-bottom 100px
 
   .iconfont
     font-size 50px

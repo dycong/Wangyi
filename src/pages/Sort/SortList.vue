@@ -9,7 +9,7 @@
           <ul class="lists">
             <li class="item" v-for="(RightList, index) in RightLists.subCateList" :key="index">
               <div class="itemPic">
-                <img :src="RightList.wapBannerUrl" alt="">
+                <img v-lazy="RightList.wapBannerUrl" alt="">
               </div>
               <p class="title">{{RightList.name}}</p>
             </li>
@@ -29,7 +29,6 @@
       return {
         // RightLists: [],
         LeftLists:[],
-
       }
     },
     computed: {
@@ -42,7 +41,6 @@
             return res
           }
         }
-
       },
     },
     async mounted () {
@@ -101,26 +99,23 @@
           background #f4f4f4 center no-repeat
           border-right 4px
           position: relative
+          img
+            width 100%
+            height 100%
 
         .cateList
           .lists
             .item
               display inline-block
               margin-right 0.4rem
-              font-size 0
               width 1.92rem
               vertical-align top
-
               .itemPic
                 width 1.92rem
                 height 1.92rem
-
                 img
-                  display block
                   width 100%
                   height 100%
-                  background #fff
-
               .title
                 height 0.96rem
                 line-height 0.48rem

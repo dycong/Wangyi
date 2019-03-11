@@ -6,7 +6,6 @@ js对象（内部会自动解析JSON数据）
 import Mock from 'mockjs'
 import shouye_data from './shouye_data.json'
 import fenlei_zhuanqu from './fenlei_zhuanqu.json'
-import cateList from './cateList.json'
 import shiwu_data from './shiwu_data.json'
 
 // 提供首页的接口

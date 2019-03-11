@@ -18,10 +18,7 @@
       <div class="otherLoginType" @click="$router.replace('/personal')">其它登录方式</div>
       <div class="register">注册账号></div>
     </div>
-    <!--<LoginTemplate :Info="Info">-->
-      <!--<button class="getCode" slot="getCode">获取验证码</button>-->
-      <!--<div class="register" slot="register">注册账号></div>-->
-    <!--</LoginTemplate>-->
+
   </div>
 </template>
 

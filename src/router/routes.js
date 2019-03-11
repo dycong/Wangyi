@@ -4,13 +4,13 @@
 const Home = () => import('../pages/Home/Home.vue')
 const Sort = () => import('../pages/Sort/Sort.vue')
 const SortList = () => import('../pages/Sort/SortList.vue')
-const Shiwu = () => import('../pages/Shiwu/Shiwu.vue')
 const Cart = () => import('../pages/Cart/Cart.vue')
 const Personal = () => import('../pages/Personal/Personal.vue')
 const Search = () => import('../pages/Search/Search.vue')
+const Find = () => import('../pages/Shiwu/Find/Find.vue')
+const Zhenxuan = () => import('../pages/Shiwu/Zhenxuan/Zhenxuan.vue')
 
-import Find from '../pages/Shiwu/Find/Find.vue'
-import Zhenxuan from '../pages/Shiwu/Zhenxuan/Zhenxuan.vue'
+import Tabs from '../pages/Shiwu/Find/Tabs.vue'
 
 import Phone from '../pages/Personal/Phone.vue'
 import Email from '../pages/Personal/Email.vue'
@@ -42,33 +42,31 @@ export default [
       }
     ]
   },
+  // 识物 发现
   {
-    path: '/shiwu',
-    component: Shiwu,
-    redirect: '/shiwu/find',
+    path: '/find',
+    component: Find,
     meta: {
       showFooter: true
     },
     children:[
       {
-        path: '/shiwu/find',
-        component: Find,
+        path: '/find/tab/:id',
+        component: Tabs,
         meta: {
           showFooter: true
-        },
+        }
       },
       {
-        path: '/shiwu/zhenxuan',
-        component: Zhenxuan
-      },
-      {
-        path: '/shiwu/find',
-        redirect: '/shiwu/find',
-        meta: {
-          showFooter: true
-        },
-      },
+        path: '/find/tab',
+        redirect: '/find/tab/0'
+      }
     ]
+  },
+  // 识物 甄选家
+  {
+    path:"/zhenxuan",
+    component:Zhenxuan
   },
   {
     path: '/cart',

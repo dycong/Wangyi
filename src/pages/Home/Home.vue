@@ -8,7 +8,7 @@
             <i class=""></i>
             <span>搜索商品,共21728款好物</span>
           </div>
-          <div class="login">登录</div>
+          <div class="login" @click="$router.replace('/personal')">登录</div>
         </div>
         <div class="header-nav-wrap">
           <div class="header-nav-some-wrap">
@@ -42,28 +42,31 @@
               </a>
             </div>
           </div>
-          <div class="down-wrap">
+          <div class="down-wrap" @click="ShowAll">
             <div class="down-left"></div>
-            <span class="down"></span>
+            <span class="down" :class="{toggle: isShowAll}" ></span>
           </div>
         </div>
-        <div class="mask-wrap">
-          <div class="mask-top">
-            <div class="allSort"></div>
-            <div class="top"></div>
+        <div class="mask" v-if="isShowAll">
+          <div class="mask-wrap">
+            <div class="mask-top">
+              <div class="allSort"></div>
+              <div class="top"></div>
+            </div>
+            <ul>
+              <li>推荐</li>
+              <li>居家生活</li>
+              <li>服饰鞋包</li>
+              <li>美食酒水</li>
+              <li>个护清洁</li>
+              <li>母婴亲子</li>
+              <li>运动旅行</li>
+              <li>数码家电</li>
+              <li>礼品特色</li>
+            </ul>
           </div>
-          <ul>
-            <li>推荐</li>
-            <li>居家生活</li>
-            <li>服饰鞋包</li>
-            <li>美食酒水</li>
-            <li>个护清洁</li>
-            <li>母婴亲子</li>
-            <li>运动旅行</li>
-            <li>数码家电</li>
-            <li>礼品特色</li>
-          </ul>
         </div>
+
       </div>
     </Header>
     <Content>
@@ -1040,786 +1043,8 @@
           </div>
         </div>
         <!--重复-->
-        <div class="repeat-shop repeat-shop1">
-          <a class="bgc"></a>
-          <div class="repeat-shop-wrap repeat-shop-wrap1">
-            <div class="repeat-wrap repeat-wrap1">
-              <ul>
-                <li class="item">
-                  <a>
-                    <img
-                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
-                      alt="">
-                    <div class="detail">
-                      <span>西班牙制造，高</span>
-                      <span class="price">￥169</span>
-                    </div>
-                    <div class="small">
-                      <span>西</span>
-                      <span>班</span>
-                      <span>牙</span>
-                      <span>制</span>
-                      <span>造</span>
-                    </div>
-                    <div class="tag">
-                      <span class="goodPrice">限时购</span>
-                    </div>
-                  </a>
-                </li>
-                <li class="item">
-                  <a>
-                    <img
-                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
-                      alt="">
-                    <div class="detail">
-                      <span>西班牙制造，高</span>
-                      <span class="price">￥169</span>
-                    </div>
-                    <div class="small">
-                      <span>西</span>
-                      <span>班</span>
-                      <span>牙</span>
-                      <span>制</span>
-                      <span>造</span>
-                    </div>
-                    <div class="tag">
-                      <span class="goodPrice">限时购</span>
-                    </div>
-                  </a>
-                </li>
-                <li class="item">
-                  <a>
-                    <img
-                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
-                      alt="">
-                    <div class="detail">
-                      <span>西班牙制造，高</span>
-                      <span class="price">￥169</span>
-                    </div>
-                    <div class="small">
-                      <span>西</span>
-                      <span>班</span>
-                      <span>牙</span>
-                      <span>制</span>
-                      <span>造</span>
-                    </div>
-                    <div class="tag">
-                      <span class="goodPrice">限时购</span>
-                    </div>
-                  </a>
-                </li>
-                <li class="item">
-                  <a>
-                    <img
-                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
-                      alt="">
-                    <div class="detail">
-                      <span>西班牙制造，高</span>
-                      <span class="price">￥169</span>
-                    </div>
-                    <div class="small">
-                      <span>西</span>
-                      <span>班</span>
-                      <span>牙</span>
-                      <span>制</span>
-                      <span>造</span>
-                    </div>
-                    <div class="tag">
-                      <span class="goodPrice">限时购</span>
-                    </div>
-                  </a>
-                </li>
-                <li class="item">
-                  <a>
-                    <img
-                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
-                      alt="">
-                    <div class="detail">
-                      <span>西班牙制造，高</span>
-                      <span class="price">￥169</span>
-                    </div>
-                    <div class="small">
-                      <span>西</span>
-                      <span>班</span>
-                      <span>牙</span>
-                      <span>制</span>
-                      <span>造</span>
-                    </div>
-                    <div class="tag">
-                      <span class="goodPrice">限时购</span>
-                    </div>
-                  </a>
-                </li>
-                <li class="item">
-                  <a>
-                    <img
-                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
-                      alt="">
-                    <div class="detail">
-                      <span>西班牙制造，高</span>
-                      <span class="price">￥169</span>
-                    </div>
-                    <div class="small">
-                      <span>西</span>
-                      <span>班</span>
-                      <span>牙</span>
-                      <span>制</span>
-                      <span>造</span>
-                    </div>
-                    <div class="tag">
-                      <span class="goodPrice">限时购</span>
-                    </div>
-                  </a>
-                </li>
-                <li class="item">
-                  <a>
-                    <img
-                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
-                      alt="">
-                    <div class="detail">
-                      <span>西班牙制造，高</span>
-                      <span class="price">￥169</span>
-                    </div>
-                    <div class="small">
-                      <span>西</span>
-                      <span>班</span>
-                      <span>牙</span>
-                      <span>制</span>
-                      <span>造</span>
-                    </div>
-                    <div class="tag">
-                      <span class="goodPrice">限时购</span>
-                    </div>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="repeat-shop repeat-shop2">
-          <a class="bgc"></a>
-          <div class="repeat-shop-wrap repeat-shop-wrap2">
-            <div class="repeat-wrap repeat-wrap2">
-              <ul>
-                <li class="item">
-                  <a>
-                    <img
-                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
-                      alt="">
-                    <div class="detail">
-                      <span>西班牙制造，高</span>
-                      <span class="price">￥169</span>
-                    </div>
-                    <div class="small">
-                      <span>西</span>
-                      <span>班</span>
-                      <span>牙</span>
-                      <span>制</span>
-                      <span>造</span>
-                    </div>
-                    <div class="tag">
-                      <span class="goodPrice">限时购</span>
-                    </div>
-                  </a>
-                </li>
-                <li class="item">
-                  <a>
-                    <img
-                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
-                      alt="">
-                    <div class="detail">
-                      <span>西班牙制造，高</span>
-                      <span class="price">￥169</span>
-                    </div>
-                    <div class="small">
-                      <span>西</span>
-                      <span>班</span>
-                      <span>牙</span>
-                      <span>制</span>
-                      <span>造</span>
-                    </div>
-                    <div class="tag">
-                      <span class="goodPrice">限时购</span>
-                    </div>
-                  </a>
-                </li>
-                <li class="item">
-                  <a>
-                    <img
-                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
-                      alt="">
-                    <div class="detail">
-                      <span>西班牙制造，高</span>
-                      <span class="price">￥169</span>
-                    </div>
-                    <div class="small">
-                      <span>西</span>
-                      <span>班</span>
-                      <span>牙</span>
-                      <span>制</span>
-                      <span>造</span>
-                    </div>
-                    <div class="tag">
-                      <span class="goodPrice">限时购</span>
-                    </div>
-                  </a>
-                </li>
-                <li class="item">
-                  <a>
-                    <img
-                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
-                      alt="">
-                    <div class="detail">
-                      <span>西班牙制造，高</span>
-                      <span class="price">￥169</span>
-                    </div>
-                    <div class="small">
-                      <span>西</span>
-                      <span>班</span>
-                      <span>牙</span>
-                      <span>制</span>
-                      <span>造</span>
-                    </div>
-                    <div class="tag">
-                      <span class="goodPrice">限时购</span>
-                    </div>
-                  </a>
-                </li>
-                <li class="item">
-                  <a>
-                    <img
-                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
-                      alt="">
-                    <div class="detail">
-                      <span>西班牙制造，高</span>
-                      <span class="price">￥169</span>
-                    </div>
-                    <div class="small">
-                      <span>西</span>
-                      <span>班</span>
-                      <span>牙</span>
-                      <span>制</span>
-                      <span>造</span>
-                    </div>
-                    <div class="tag">
-                      <span class="goodPrice">限时购</span>
-                    </div>
-                  </a>
-                </li>
-                <li class="item">
-                  <a>
-                    <img
-                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
-                      alt="">
-                    <div class="detail">
-                      <span>西班牙制造，高</span>
-                      <span class="price">￥169</span>
-                    </div>
-                    <div class="small">
-                      <span>西</span>
-                      <span>班</span>
-                      <span>牙</span>
-                      <span>制</span>
-                      <span>造</span>
-                    </div>
-                    <div class="tag">
-                      <span class="goodPrice">限时购</span>
-                    </div>
-                  </a>
-                </li>
-                <li class="item">
-                  <a>
-                    <img
-                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
-                      alt="">
-                    <div class="detail">
-                      <span>西班牙制造，高</span>
-                      <span class="price">￥169</span>
-                    </div>
-                    <div class="small">
-                      <span>西</span>
-                      <span>班</span>
-                      <span>牙</span>
-                      <span>制</span>
-                      <span>造</span>
-                    </div>
-                    <div class="tag">
-                      <span class="goodPrice">限时购</span>
-                    </div>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="repeat-shop repeat-shop3">
-          <a class="bgc"></a>
-          <div class="repeat-shop-wrap repeat-shop-wrap3">
-            <div class="repeat-wrap repeat-wrap3">
-              <ul>
-                <li class="item">
-                  <a>
-                    <img
-                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
-                      alt="">
-                    <div class="detail">
-                      <span>西班牙制造，高</span>
-                      <span class="price">￥169</span>
-                    </div>
-                    <div class="small">
-                      <span>西</span>
-                      <span>班</span>
-                      <span>牙</span>
-                      <span>制</span>
-                      <span>造</span>
-                    </div>
-                    <div class="tag">
-                      <span class="goodPrice">限时购</span>
-                    </div>
-                  </a>
-                </li>
-                <li class="item">
-                  <a>
-                    <img
-                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
-                      alt="">
-                    <div class="detail">
-                      <span>西班牙制造，高</span>
-                      <span class="price">￥169</span>
-                    </div>
-                    <div class="small">
-                      <span>西</span>
-                      <span>班</span>
-                      <span>牙</span>
-                      <span>制</span>
-                      <span>造</span>
-                    </div>
-                    <div class="tag">
-                      <span class="goodPrice">限时购</span>
-                    </div>
-                  </a>
-                </li>
-                <li class="item">
-                  <a>
-                    <img
-                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
-                      alt="">
-                    <div class="detail">
-                      <span>西班牙制造，高</span>
-                      <span class="price">￥169</span>
-                    </div>
-                    <div class="small">
-                      <span>西</span>
-                      <span>班</span>
-                      <span>牙</span>
-                      <span>制</span>
-                      <span>造</span>
-                    </div>
-                    <div class="tag">
-                      <span class="goodPrice">限时购</span>
-                    </div>
-                  </a>
-                </li>
-                <li class="item">
-                  <a>
-                    <img
-                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
-                      alt="">
-                    <div class="detail">
-                      <span>西班牙制造，高</span>
-                      <span class="price">￥169</span>
-                    </div>
-                    <div class="small">
-                      <span>西</span>
-                      <span>班</span>
-                      <span>牙</span>
-                      <span>制</span>
-                      <span>造</span>
-                    </div>
-                    <div class="tag">
-                      <span class="goodPrice">限时购</span>
-                    </div>
-                  </a>
-                </li>
-                <li class="item">
-                  <a>
-                    <img
-                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
-                      alt="">
-                    <div class="detail">
-                      <span>西班牙制造，高</span>
-                      <span class="price">￥169</span>
-                    </div>
-                    <div class="small">
-                      <span>西</span>
-                      <span>班</span>
-                      <span>牙</span>
-                      <span>制</span>
-                      <span>造</span>
-                    </div>
-                    <div class="tag">
-                      <span class="goodPrice">限时购</span>
-                    </div>
-                  </a>
-                </li>
-                <li class="item">
-                  <a>
-                    <img
-                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
-                      alt="">
-                    <div class="detail">
-                      <span>西班牙制造，高</span>
-                      <span class="price">￥169</span>
-                    </div>
-                    <div class="small">
-                      <span>西</span>
-                      <span>班</span>
-                      <span>牙</span>
-                      <span>制</span>
-                      <span>造</span>
-                    </div>
-                    <div class="tag">
-                      <span class="goodPrice">限时购</span>
-                    </div>
-                  </a>
-                </li>
-                <li class="item">
-                  <a>
-                    <img
-                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
-                      alt="">
-                    <div class="detail">
-                      <span>西班牙制造，高</span>
-                      <span class="price">￥169</span>
-                    </div>
-                    <div class="small">
-                      <span>西</span>
-                      <span>班</span>
-                      <span>牙</span>
-                      <span>制</span>
-                      <span>造</span>
-                    </div>
-                    <div class="tag">
-                      <span class="goodPrice">限时购</span>
-                    </div>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="repeat-shop repeat-shop4">
-          <a class="bgc"></a>
-          <div class="repeat-shop-wrap repeat-shop-wrap4">
-            <div class="repeat-wrap repeat-wrap4">
-              <ul>
-                <li class="item">
-                  <a>
-                    <img
-                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
-                      alt="">
-                    <div class="detail">
-                      <span>西班牙制造，高</span>
-                      <span class="price">￥169</span>
-                    </div>
-                    <div class="small">
-                      <span>西</span>
-                      <span>班</span>
-                      <span>牙</span>
-                      <span>制</span>
-                      <span>造</span>
-                    </div>
-                    <div class="tag">
-                      <span class="goodPrice">限时购</span>
-                    </div>
-                  </a>
-                </li>
-                <li class="item">
-                  <a>
-                    <img
-                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
-                      alt="">
-                    <div class="detail">
-                      <span>西班牙制造，高</span>
-                      <span class="price">￥169</span>
-                    </div>
-                    <div class="small">
-                      <span>西</span>
-                      <span>班</span>
-                      <span>牙</span>
-                      <span>制</span>
-                      <span>造</span>
-                    </div>
-                    <div class="tag">
-                      <span class="goodPrice">限时购</span>
-                    </div>
-                  </a>
-                </li>
-                <li class="item">
-                  <a>
-                    <img
-                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
-                      alt="">
-                    <div class="detail">
-                      <span>西班牙制造，高</span>
-                      <span class="price">￥169</span>
-                    </div>
-                    <div class="small">
-                      <span>西</span>
-                      <span>班</span>
-                      <span>牙</span>
-                      <span>制</span>
-                      <span>造</span>
-                    </div>
-                    <div class="tag">
-                      <span class="goodPrice">限时购</span>
-                    </div>
-                  </a>
-                </li>
-                <li class="item">
-                  <a>
-                    <img
-                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
-                      alt="">
-                    <div class="detail">
-                      <span>西班牙制造，高</span>
-                      <span class="price">￥169</span>
-                    </div>
-                    <div class="small">
-                      <span>西</span>
-                      <span>班</span>
-                      <span>牙</span>
-                      <span>制</span>
-                      <span>造</span>
-                    </div>
-                    <div class="tag">
-                      <span class="goodPrice">限时购</span>
-                    </div>
-                  </a>
-                </li>
-                <li class="item">
-                  <a>
-                    <img
-                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
-                      alt="">
-                    <div class="detail">
-                      <span>西班牙制造，高</span>
-                      <span class="price">￥169</span>
-                    </div>
-                    <div class="small">
-                      <span>西</span>
-                      <span>班</span>
-                      <span>牙</span>
-                      <span>制</span>
-                      <span>造</span>
-                    </div>
-                    <div class="tag">
-                      <span class="goodPrice">限时购</span>
-                    </div>
-                  </a>
-                </li>
-                <li class="item">
-                  <a>
-                    <img
-                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
-                      alt="">
-                    <div class="detail">
-                      <span>西班牙制造，高</span>
-                      <span class="price">￥169</span>
-                    </div>
-                    <div class="small">
-                      <span>西</span>
-                      <span>班</span>
-                      <span>牙</span>
-                      <span>制</span>
-                      <span>造</span>
-                    </div>
-                    <div class="tag">
-                      <span class="goodPrice">限时购</span>
-                    </div>
-                  </a>
-                </li>
-                <li class="item">
-                  <a>
-                    <img
-                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
-                      alt="">
-                    <div class="detail">
-                      <span>西班牙制造，高</span>
-                      <span class="price">￥169</span>
-                    </div>
-                    <div class="small">
-                      <span>西</span>
-                      <span>班</span>
-                      <span>牙</span>
-                      <span>制</span>
-                      <span>造</span>
-                    </div>
-                    <div class="tag">
-                      <span class="goodPrice">限时购</span>
-                    </div>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="repeat-shop repeat-shop5">
-          <a class="bgc"></a>
-          <div class="repeat-shop-wrap repeat-shop-wrap5">
-            <div class=" repeat-wrap repeat-wrap5">
-              <ul>
-                <li class="item">
-                  <a>
-                    <img
-                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
-                      alt="">
-                    <div class="detail">
-                      <span>西班牙制造，高</span>
-                      <span class="price">￥169</span>
-                    </div>
-                    <div class="small">
-                      <span>西</span>
-                      <span>班</span>
-                      <span>牙</span>
-                      <span>制</span>
-                      <span>造</span>
-                    </div>
-                    <div class="tag">
-                      <span class="goodPrice">限时购</span>
-                    </div>
-                  </a>
-                </li>
-                <li class="item">
-                  <a>
-                    <img
-                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
-                      alt="">
-                    <div class="detail">
-                      <span>西班牙制造，高</span>
-                      <span class="price">￥169</span>
-                    </div>
-                    <div class="small">
-                      <span>西</span>
-                      <span>班</span>
-                      <span>牙</span>
-                      <span>制</span>
-                      <span>造</span>
-                    </div>
-                    <div class="tag">
-                      <span class="goodPrice">限时购</span>
-                    </div>
-                  </a>
-                </li>
-                <li class="item">
-                  <a>
-                    <img
-                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
-                      alt="">
-                    <div class="detail">
-                      <span>西班牙制造，高</span>
-                      <span class="price">￥169</span>
-                    </div>
-                    <div class="small">
-                      <span>西</span>
-                      <span>班</span>
-                      <span>牙</span>
-                      <span>制</span>
-                      <span>造</span>
-                    </div>
-                    <div class="tag">
-                      <span class="goodPrice">限时购</span>
-                    </div>
-                  </a>
-                </li>
-                <li class="item">
-                  <a>
-                    <img
-                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
-                      alt="">
-                    <div class="detail">
-                      <span>西班牙制造，高</span>
-                      <span class="price">￥169</span>
-                    </div>
-                    <div class="small">
-                      <span>西</span>
-                      <span>班</span>
-                      <span>牙</span>
-                      <span>制</span>
-                      <span>造</span>
-                    </div>
-                    <div class="tag">
-                      <span class="goodPrice">限时购</span>
-                    </div>
-                  </a>
-                </li>
-                <li class="item">
-                  <a>
-                    <img
-                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
-                      alt="">
-                    <div class="detail">
-                      <span>西班牙制造，高</span>
-                      <span class="price">￥169</span>
-                    </div>
-                    <div class="small">
-                      <span>西</span>
-                      <span>班</span>
-                      <span>牙</span>
-                      <span>制</span>
-                      <span>造</span>
-                    </div>
-                    <div class="tag">
-                      <span class="goodPrice">限时购</span>
-                    </div>
-                  </a>
-                </li>
-                <li class="item">
-                  <a>
-                    <img
-                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
-                      alt="">
-                    <div class="detail">
-                      <span>西班牙制造，高</span>
-                      <span class="price">￥169</span>
-                    </div>
-                    <div class="small">
-                      <span>西</span>
-                      <span>班</span>
-                      <span>牙</span>
-                      <span>制</span>
-                      <span>造</span>
-                    </div>
-                    <div class="tag">
-                      <span class="goodPrice">限时购</span>
-                    </div>
-                  </a>
-                </li>
-                <li class="item">
-                  <a>
-                    <img
-                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
-                      alt="">
-                    <div class="detail">
-                      <span>西班牙制造，高</span>
-                      <span class="price">￥169</span>
-                    </div>
-                    <div class="small">
-                      <span>西</span>
-                      <span>班</span>
-                      <span>牙</span>
-                      <span>制</span>
-                      <span>造</span>
-                    </div>
-                    <div class="tag">
-                      <span class="goodPrice">限时购</span>
-                    </div>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+        <RepeatShop />
+
       </div>
     </Content>
     <Footer>
@@ -1839,24 +1064,47 @@
     <a class="gift">
       <i class="icon"></i>
     </a>
-    <i class="GO"></i>
+    <a href="#" class="GO" v-show="isShowGo"></a>
   </div>
 </template>
 
 <script>
+  import RepeatShop from '../../components/RepeatShop/RepeatShop.vue'
   import Swiper from 'swiper'
   import BScroll from 'better-scroll'
   import 'swiper/dist/css/swiper.min.css'
 
   export default {
+    data() {
+      return{
+        isShowAll: false,
+        isShowGo:false
+      }
+    },
+    computed:{
+
+    },
     methods: {
+      ShowGo(){
+        let ScrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop
+        // console.log(ScrollTop)
+        if(ScrollTop > 1300){
+          this.isShowGo = true
+        }else {
+          this.isShowGo = false
+        }
+      },
+
+      ShowAll() {
+        this.isShowAll = !this.isShowAll
+      },
       // BScroll 滑动
       _initScroll () {
         new BScroll('.header-nav-some-wrap', {
           scrollX: true,
           click: true
         })
-        new BScroll('.repeat-shop1 .repeat-shop-wrap1', {
+       /* new BScroll('.repeat-shop1 .repeat-shop-wrap1', {
           scrollX: true,
           click: true
         })
@@ -1875,7 +1123,7 @@
         new BScroll('.repeat-shop5 .repeat-shop-wrap5', {
           scrollX: true,
           click: true
-        })
+        })*/
 
       }
     },
@@ -1900,17 +1148,19 @@
         slidesPerView: 'auto',
       })
 
+      window.addEventListener('scroll', this.ShowGo)
+
       this.$nextTick(() => {
         this._initScroll()
       })
-
+    },
+    components:{
+      RepeatShop
     }
   }
 </script>
 
-
 <style lang="stylus" rel="stylesheet/stylus" scoped>
-  @import "../../common/stylus/mixins.styl"
   #Container
 
     Header
@@ -2002,24 +1252,26 @@
                   border-bottom 2px solid #b4282d
 
           .down-wrap
-            float: left
+            z-index 100
+            /*float: left*/
             width 1.33333rem
-            height 0.8rem
+            height 0.75rem
             text-align: center
             background #fff
             position: absolute
             top: 1.2rem
             right: 0
 
+
             .down-left
               position: absolute
               top: 0
               right 1rem
               width 0.8rem
-              height 0.8rem
+              height 0.6rem
               background #fff
 
-            span
+            .down
               margin-top -0.3rem
               width 0.4rem
               height 0.4rem
@@ -2028,11 +1280,20 @@
               background-image url(//yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/arrow-down-3-799ded53ea.png)
               background-repeat no-repeat
               background-size 100% 100%
+              transition transform  0.5s
+              &.toggle
+                transform rotate(180deg)
 
-
-        .mask-wrap
-          display none
-          width 100%
+        .mask
+          z-index 1
+          width 1000rem
+          height 1000rem
+          background rgba(0,0,0,0.1)
+          .mask-wrap
+            position: relative
+            z-index 2
+            background #fff
+            width 100%
 
     Content
       background #eee
@@ -2603,7 +1864,6 @@
                   color #7f7f7f
                   padding 0 0.2666rem
 
-
         .raise-shop
           background #fff
           margin-bottom 0.2667rem
@@ -2675,36 +1935,6 @@
                   margin-top 0.2rem
                   font-size 0.32rem
                   color #7f7f7f
-
-        .repeat-shop
-          background #fff
-          margin-bottom 0.26667rem
-          .bgc
-            background url(https://yanxuan.nosdn.127.net/61057b244c63dec382afb5385f0d4270.jpg?imageView&thumbnail=750x0&quality=75)
-            background-size 100% 100%
-            display block
-            width 100%
-            height 4.9333rem
-            margin-bottom 0.26667rem
-
-          .repeat-shop-wrap
-            background #fff
-            display flex
-            overflow hidden
-            flex-wrap nowrap
-
-            .repeat-wrap
-              background #fff
-              display flex
-              flex 2
-              /*height auto*/
-              padding 0 0.4rem 0.4rem
-
-              ul
-                overflow hidden
-                display flex
-                height auto
-                position: relative
 
 
     Footer
