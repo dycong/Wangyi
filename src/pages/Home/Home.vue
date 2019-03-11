@@ -4,7 +4,7 @@
       <div class="header-wrap">
         <div class="logo">
           <h1></h1>
-          <div class="input">
+          <div class="input" @click="$router.push('/search')">
             <i class=""></i>
             <span>搜索商品,共21728款好物</span>
           </div>
@@ -12,7 +12,7 @@
         </div>
         <div class="header-nav-wrap">
           <div class="header-nav-some-wrap">
-            <div class="header-nav-some" >
+            <div class="header-nav-some">
               <a href="javascript:;" class="active">
                 <span>推荐</span>
               </a>
@@ -120,17 +120,20 @@
         <ul class="">
           <li>
             <a href="JavaScript:;">
-              <i style="background-image:url(http://yanxuan.nosdn.127.net/a03dd909803b9ac032eba58b7253a2f6.png);"></i><span>网易自营品牌</span>
+              <i
+                style="background-image:url(http://yanxuan.nosdn.127.net/a03dd909803b9ac032eba58b7253a2f6.png);"></i><span>网易自营品牌</span>
             </a>
           </li>
           <li>
             <a href="JavaScript:;">
-              <i style="background-image:url(http://yanxuan.nosdn.127.net/2d0402ffcd52b3ec3b07422681c42a89.png);"></i><span>30天无忧退货</span>
+              <i
+                style="background-image:url(http://yanxuan.nosdn.127.net/2d0402ffcd52b3ec3b07422681c42a89.png);"></i><span>30天无忧退货</span>
             </a>
           </li>
           <li>
             <a href="JavaScript:;">
-              <i style="background-image:url(http://yanxuan.nosdn.127.net/eb61ee48e8942dbd1784c9ee75ebe955.png);"></i><span>48小时快速退款</span>
+              <i
+                style="background-image:url(http://yanxuan.nosdn.127.net/eb61ee48e8942dbd1784c9ee75ebe955.png);"></i><span>48小时快速退款</span>
             </a>
           </li>
         </ul>
@@ -187,15 +190,18 @@
           <div class="queen">
             <div class="queen-top">
               <a href="javascript:;">
-                <img src="https://yanxuan.nosdn.127.net/15519407811151838.gif?imageView&thumbnail=750x0&quality=75" alt="">
+                <img src="https://yanxuan.nosdn.127.net/15519407811151838.gif?imageView&thumbnail=750x0&quality=75"
+                     alt="">
               </a>
             </div>
             <div class="queen-bottom">
               <a href="">
-                <img src="https://yanxuan.nosdn.127.net/15519407902381839.jpg?imageView&thumbnail=375x0&quality=75" alt="">
+                <img src="https://yanxuan.nosdn.127.net/15519407902381839.jpg?imageView&thumbnail=375x0&quality=75"
+                     alt="">
               </a>
               <a href="">
-                <img src="https://yanxuan.nosdn.127.net/15519497825531997.jpg?imageView&thumbnail=375x0&quality=75" alt="">
+                <img src="https://yanxuan.nosdn.127.net/15519497825531997.jpg?imageView&thumbnail=375x0&quality=75"
+                     alt="">
               </a>
             </div>
             <div class="nothing"></div>
@@ -213,8 +219,12 @@
                 <p class="title">女王专属美食阁</p>
                 <p class="desc">3件75折/每满150减30</p>
                 <div>
-                  <img src="http://yanxuan.nosdn.127.net/2b7ffdac363edd686b0471de1655c813.png?imageView&thumbnail=150x150&quality=75" alt="">
-                  <img src="http://yanxuan.nosdn.127.net/d84dbafe215d765fb5bbd75e642ad445.png?imageView&thumbnail=150x150&quality=75" alt="">
+                  <img
+                    src="http://yanxuan.nosdn.127.net/2b7ffdac363edd686b0471de1655c813.png?imageView&thumbnail=150x150&quality=75"
+                    alt="">
+                  <img
+                    src="http://yanxuan.nosdn.127.net/d84dbafe215d765fb5bbd75e642ad445.png?imageView&thumbnail=150x150&quality=75"
+                    alt="">
                 </div>
               </a>
             </div>
@@ -223,8 +233,12 @@
                 <p class="title">2019明前龙井</p>
                 <p class="desc">预售好价75折</p>
                 <div>
-                  <img src="http://yanxuan.nosdn.127.net/f958c8b4e8d6dfa7fc574bd06b530821.png?imageView&thumbnail=150x150&quality=75" alt="">
-                  <img src="http://yanxuan.nosdn.127.net/c33ee95d358956a927708d16d67d727e.png?imageView&thumbnail=150x150&quality=75" alt="">
+                  <img
+                    src="http://yanxuan.nosdn.127.net/f958c8b4e8d6dfa7fc574bd06b530821.png?imageView&thumbnail=150x150&quality=75"
+                    alt="">
+                  <img
+                    src="http://yanxuan.nosdn.127.net/c33ee95d358956a927708d16d67d727e.png?imageView&thumbnail=150x150&quality=75"
+                    alt="">
                 </div>
               </a>
             </div>
@@ -233,8 +247,12 @@
                 <p class="title">按摩神器大赏</p>
                 <p class="desc">伪真人手按摩</p>
                 <div>
-                  <img src="https://yanxuan.nosdn.127.net/0fc3975b621704cb00328ef96cdce963.png?imageView&thumbnail=150x150&quality=75" alt="">
-                  <img src="https://yanxuan.nosdn.127.net/823652e902ffeb49f50381b93e7e0be0.png?imageView&thumbnail=150x150&quality=75" alt="">
+                  <img
+                    src="https://yanxuan.nosdn.127.net/0fc3975b621704cb00328ef96cdce963.png?imageView&thumbnail=150x150&quality=75"
+                    alt="">
+                  <img
+                    src="https://yanxuan.nosdn.127.net/823652e902ffeb49f50381b93e7e0be0.png?imageView&thumbnail=150x150&quality=75"
+                    alt="">
                 </div>
               </a>
             </div>
@@ -243,8 +261,12 @@
                 <p class="title">热销百强榜</p>
                 <p class="desc">全站实时更新</p>
                 <div>
-                  <img src="http://yanxuan.nosdn.127.net/d84c728c164a77a8c5f0ca153d21fe69.png?imageView&thumbnail=150x150&quality=75" alt="">
-                  <img src="https://yanxuan.nosdn.127.net/31dc9401203e8e6f99572abfc4e047a3.png?imageView&thumbnail=150x150&quality=75" alt="">
+                  <img
+                    src="http://yanxuan.nosdn.127.net/d84c728c164a77a8c5f0ca153d21fe69.png?imageView&thumbnail=150x150&quality=75"
+                    alt="">
+                  <img
+                    src="https://yanxuan.nosdn.127.net/31dc9401203e8e6f99572abfc4e047a3.png?imageView&thumbnail=150x150&quality=75"
+                    alt="">
                 </div>
               </a>
             </div>
@@ -260,7 +282,9 @@
               <div class="swiper-slide">
                 <li class="item">
                   <a>
-                    <img src="https://yanxuan.nosdn.127.net/9cf70438be99e0662c8123032228f870.png?imageView&quality=65&thumbnail=330x330" alt="">
+                    <img
+                      src="https://yanxuan.nosdn.127.net/9cf70438be99e0662c8123032228f870.png?imageView&quality=65&thumbnail=330x330"
+                      alt="">
                     <div class="detail">
                       <span class="font-normal">泰国制造 天然乳胶枕 护...</span>
                       <span class="price">￥169</span>
@@ -275,7 +299,9 @@
                 </li>
                 <li class="item">
                   <a>
-                    <img src="https://yanxuan.nosdn.127.net/0466a812b3bd56197650d0b618abbf62.png?imageView&quality=65&thumbnail=330x330" alt="">
+                    <img
+                      src="https://yanxuan.nosdn.127.net/0466a812b3bd56197650d0b618abbf62.png?imageView&quality=65&thumbnail=330x330"
+                      alt="">
                     <div class="detail">
                       <span>玩趣彩虹四季拖鞋</span>
                       <span class="price">￥19.9</span>
@@ -290,7 +316,9 @@
                 </li>
                 <li class="item">
                   <a>
-                    <img src="https://yanxuan.nosdn.127.net/eb87709f92843bd6eddf9cb7a2b01688.png?imageView&quality=65&thumbnail=330x330" alt="">
+                    <img
+                      src="https://yanxuan.nosdn.127.net/eb87709f92843bd6eddf9cb7a2b01688.png?imageView&quality=65&thumbnail=330x330"
+                      alt="">
                     <div class="detail">
                       <span>电动式硅胶洁面仪</span>
                       <span class="price">￥119</span>
@@ -301,7 +329,9 @@
               <div class="swiper-slide">
                 <li class="item">
                   <a>
-                    <img src="https://yanxuan.nosdn.127.net/360eb0e1645f9ae82ad7f94296acafcd.png?imageView&quality=65&thumbnail=330x330" alt="">
+                    <img
+                      src="https://yanxuan.nosdn.127.net/360eb0e1645f9ae82ad7f94296acafcd.png?imageView&quality=65&thumbnail=330x330"
+                      alt="">
                     <div class="detail">
                       <span>100年传世珐琅锅</span>
                       <span class="price">￥241</span>
@@ -316,7 +346,9 @@
                 </li>
                 <li class="item">
                   <a>
-                    <img src="https://yanxuan.nosdn.127.net/96dbf7cb44b1c504589b6e42c6e5e53a.png?imageView&quality=65&thumbnail=330x330" alt="">
+                    <img
+                      src="https://yanxuan.nosdn.127.net/96dbf7cb44b1c504589b6e42c6e5e53a.png?imageView&quality=65&thumbnail=330x330"
+                      alt="">
                     <div class="detail">
                       <span>即食燕窝 70克*6瓶...</span>
                       <span class="price">￥208</span>
@@ -325,7 +357,9 @@
                 </li>
                 <li class="item">
                   <a>
-                    <img src="https://yanxuan.nosdn.127.net/1ff21a48ff35db41c09cd3036e9e3b2e.png?imageView&quality=65&thumbnail=330x330" alt="">
+                    <img
+                      src="https://yanxuan.nosdn.127.net/1ff21a48ff35db41c09cd3036e9e3b2e.png?imageView&quality=65&thumbnail=330x330"
+                      alt="">
                     <div class="detail">
                       <span>大丈夫冻牛肉面</span>
                       <span class="price">￥22.8</span>
@@ -336,7 +370,9 @@
               <div class="swiper-slide">
                 <li class="item">
                   <a>
-                    <img src="https://yanxuan.nosdn.127.net/55425f24345d01992d61a1646325ac94.png?imageView&quality=65&thumbnail=330x330" alt="">
+                    <img
+                      src="https://yanxuan.nosdn.127.net/55425f24345d01992d61a1646325ac94.png?imageView&quality=65&thumbnail=330x330"
+                      alt="">
                     <div class="detail">
                       <span>严选礼品卡 1000元面...</span>
                       <span class="price">￥1000</span>
@@ -345,7 +381,9 @@
                 </li>
                 <li class="item">
                   <a>
-                    <img src="https://yanxuan.nosdn.127.net/9cf64f95283f5c7d3cef459df3745a5d.png?imageView&quality=65&thumbnail=330x330" alt="">
+                    <img
+                      src="https://yanxuan.nosdn.127.net/9cf64f95283f5c7d3cef459df3745a5d.png?imageView&quality=65&thumbnail=330x330"
+                      alt="">
                     <div class="detail">
                       <span>男式磨毛牛津纺长袖衬衫</span>
                       <span class="price">￥130</span>
@@ -360,7 +398,9 @@
                 </li>
                 <li class="item">
                   <a>
-                    <img src="https://yanxuan.nosdn.127.net/dfe93936f47b66f4b8a4f1869f0ce828.png?imageView&quality=65&thumbnail=330x330" alt="">
+                    <img
+                      src="https://yanxuan.nosdn.127.net/dfe93936f47b66f4b8a4f1869f0ce828.png?imageView&quality=65&thumbnail=330x330"
+                      alt="">
                     <div class="detail">
                       <span>日式和风超声波电动牙刷</span>
                       <span class="price">￥129</span>
@@ -372,7 +412,9 @@
               <div class="swiper-slide">
                 <li class="item">
                   <a>
-                    <img src="https://yanxuan.nosdn.127.net/e7414e953903e55c54f354d2309ef270.png?imageView&quality=65&thumbnail=330x330" alt="">
+                    <img
+                      src="https://yanxuan.nosdn.127.net/e7414e953903e55c54f354d2309ef270.png?imageView&quality=65&thumbnail=330x330"
+                      alt="">
                     <div class="detail">
                       <span>20寸 全铝镁合金登机箱</span>
                       <span class="price">￥799</span>
@@ -387,7 +429,9 @@
                 </li>
                 <li class="item">
                   <a>
-                    <img src="https://yanxuan.nosdn.127.net/79febce8e66ead2b4f11ac3e645bcf82.png?imageView&quality=65&thumbnail=330x330" alt="">
+                    <img
+                      src="https://yanxuan.nosdn.127.net/79febce8e66ead2b4f11ac3e645bcf82.png?imageView&quality=65&thumbnail=330x330"
+                      alt="">
                     <div class="detail">
                       <span>男式针织压脚束脚裤</span>
                       <span class="price">￥150</span>
@@ -402,7 +446,9 @@
                 </li>
                 <li class="item">
                   <a>
-                    <img src="https://yanxuan.nosdn.127.net/de773a91504ea09383eaa946faf7de71.png?imageView&quality=65&thumbnail=330x330" alt="">
+                    <img
+                      src="https://yanxuan.nosdn.127.net/de773a91504ea09383eaa946faf7de71.png?imageView&quality=65&thumbnail=330x330"
+                      alt="">
                     <div class="detail">
                       <span>史蒂夫 短袖T恤 我的世界...</span>
                       <span class="price">￥99</span>
@@ -435,7 +481,9 @@
           <div class="time-shop-center">
             <a href="">
               <div class="shop-img">
-                <img src="http://yanxuan.nosdn.127.net/19ca59c48a76f62d459737aa82922b16.png?imageView&thumbnail=216x216&quality=75" alt="">
+                <img
+                  src="http://yanxuan.nosdn.127.net/19ca59c48a76f62d459737aa82922b16.png?imageView&thumbnail=216x216&quality=75"
+                  alt="">
               </div>
               <div class="price">
                 <span class="newPrice">￥179</span>
@@ -444,7 +492,9 @@
             </a>
             <a href="">
               <div class="shop-img">
-                <img src="http://yanxuan.nosdn.127.net/ef596b93a1b026304b9c5b99fee7c2f1.png?imageView&thumbnail=216x216&quality=75" alt="">
+                <img
+                  src="http://yanxuan.nosdn.127.net/ef596b93a1b026304b9c5b99fee7c2f1.png?imageView&thumbnail=216x216&quality=75"
+                  alt="">
               </div>
               <div class="price">
                 <span class="newPrice">￥5099</span>
@@ -453,7 +503,9 @@
             </a>
             <a href="">
               <div class="shop-img">
-                <img src="http://yanxuan.nosdn.127.net/ef596b93a1b026304b9c5b99fee7c2f1.png?imageView&thumbnail=216x216&quality=75" alt="">
+                <img
+                  src="http://yanxuan.nosdn.127.net/ef596b93a1b026304b9c5b99fee7c2f1.png?imageView&thumbnail=216x216&quality=75"
+                  alt="">
               </div>
               <div class="price">
                 <span class="newPrice">￥2079</span>
@@ -462,7 +514,9 @@
             </a>
             <a href="">
               <div class="shop-img">
-                <img src="http://yanxuan.nosdn.127.net/56f5c0738eba678890ff12bc92895e44.png?imageView&thumbnail=216x216&quality=75" alt="">
+                <img
+                  src="http://yanxuan.nosdn.127.net/56f5c0738eba678890ff12bc92895e44.png?imageView&thumbnail=216x216&quality=75"
+                  alt="">
               </div>
               <div class="price">
                 <span class="newPrice">￥379</span>
@@ -471,7 +525,9 @@
             </a>
             <a href="">
               <div class="shop-img">
-                <img src="http://yanxuan.nosdn.127.net/f6afcfe134c0a28f912db9472c40f5f8.png?imageView&thumbnail=216x216&quality=75" alt="">
+                <img
+                  src="http://yanxuan.nosdn.127.net/f6afcfe134c0a28f912db9472c40f5f8.png?imageView&thumbnail=216x216&quality=75"
+                  alt="">
               </div>
               <div class="price">
                 <span class="newPrice">￥1119</span>
@@ -480,7 +536,9 @@
             </a>
             <a href="">
               <div class="shop-img">
-                <img src="http://yanxuan.nosdn.127.net/e65a0301983305d68adb0ae7f9890bd2.png?imageView&thumbnail=216x216&quality=75" alt="">
+                <img
+                  src="http://yanxuan.nosdn.127.net/e65a0301983305d68adb0ae7f9890bd2.png?imageView&thumbnail=216x216&quality=75"
+                  alt="">
               </div>
               <div class="price">
                 <span class="newPrice">￥236</span>
@@ -503,7 +561,9 @@
           <div class="new-shop-center">
             <li class="item">
               <a>
-                <img src="https://yanxuan.nosdn.127.net/9cf70438be99e0662c8123032228f870.png?imageView&quality=65&thumbnail=330x330" alt="">
+                <img
+                  src="https://yanxuan.nosdn.127.net/9cf70438be99e0662c8123032228f870.png?imageView&quality=65&thumbnail=330x330"
+                  alt="">
                 <div class="detail">
                   <span>网易智造低压海盐热敷腰带</span>
                   <span class="price">￥169</span>
@@ -515,7 +575,9 @@
             </li>
             <li class="item">
               <a>
-                <img src="http://yanxuan.nosdn.127.net/24320570a1ea380d50deb1e509afb522.png?imageView&quality=65&thumbnail=330x330" alt="">
+                <img
+                  src="http://yanxuan.nosdn.127.net/24320570a1ea380d50deb1e509afb522.png?imageView&quality=65&thumbnail=330x330"
+                  alt="">
                 <div class="detail">
                   <span>2019明前特技西湖龙井...</span>
                   <span class="price">￥199</span>
@@ -527,7 +589,9 @@
             </li>
             <li class="item">
               <a>
-                <img src="http://yanxuan.nosdn.127.net/b91ff43b7a016a43390790ee5fbcab01.png?imageView&quality=65&thumbnail=330x330" alt="">
+                <img
+                  src="http://yanxuan.nosdn.127.net/b91ff43b7a016a43390790ee5fbcab01.png?imageView&quality=65&thumbnail=330x330"
+                  alt="">
                 <div class="detail">
                   <span>泰国制造 天然乳胶枕 护...</span>
                   <span class="price">￥169</span>
@@ -545,7 +609,9 @@
             </li>
             <li class="item">
               <a>
-                <img src="http://yanxuan.nosdn.127.net/38d204ba72e3a72afb59d1b491a15f5d.png?imageView&quality=65&thumbnail=330x330" alt="">
+                <img
+                  src="http://yanxuan.nosdn.127.net/38d204ba72e3a72afb59d1b491a15f5d.png?imageView&quality=65&thumbnail=330x330"
+                  alt="">
                 <div class="detail">
                   <span>泰国制造 天然乳胶枕 护...</span>
                   <span class="price">￥169</span>
@@ -557,7 +623,9 @@
             </li>
             <li class="item">
               <a>
-                <img src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330" alt="">
+                <img
+                  src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
+                  alt="">
                 <div class="detail">
                   <span>泰国制造 天然乳胶枕 护...</span>
                   <span class="price">￥169</span>
@@ -575,7 +643,9 @@
             </li>
             <li class="item">
               <a>
-                <img src="http://yanxuan.nosdn.127.net/0cb381c4f4879a62e7ec024d727a466c.png?imageView&quality=65&thumbnail=330x330" alt="">
+                <img
+                  src="http://yanxuan.nosdn.127.net/0cb381c4f4879a62e7ec024d727a466c.png?imageView&quality=65&thumbnail=330x330"
+                  alt="">
                 <div class="detail">
                   <span>泰国制造 天然乳胶枕 护...</span>
                   <span class="price">￥169</span>
@@ -597,7 +667,7 @@
         <div class="pop-shop">
           <div class="shop-top">
             <div class="text">
-              <span>新品首发</span>
+              <span>人气推荐</span>
             </div>
             <a class="more">
               <span>更多</span>
@@ -606,7 +676,9 @@
           </div>
           <a class="pop-shop-wrap" href="">
             <div class="pop-shop-img">
-              <img src="http://yanxuan.nosdn.127.net/73af63aa5c47c369fe7e2f30b3815aac.png?imageView&quality=65&thumbnail=280x280" alt="">
+              <img
+                src="http://yanxuan.nosdn.127.net/73af63aa5c47c369fe7e2f30b3815aac.png?imageView&quality=65&thumbnail=280x280"
+                alt="">
             </div>
             <div class="pop-shop-tag">
               <div class="goodPrice-wrap">
@@ -620,7 +692,9 @@
           <div class="pop-ul">
             <li class="item">
               <a>
-                <img src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330" alt="">
+                <img
+                  src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
+                  alt="">
                 <div class="detail">
                   <span>西班牙制造，高</span>
                   <span class="price">￥169</span>
@@ -639,7 +713,9 @@
             </li>
             <li class="item">
               <a>
-                <img src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330" alt="">
+                <img
+                  src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
+                  alt="">
                 <div class="detail">
                   <span>西班牙制造，高</span>
                   <span class="price">￥449</span>
@@ -648,7 +724,9 @@
             </li>
             <li class="item">
               <a>
-                <img src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330" alt="">
+                <img
+                  src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
+                  alt="">
                 <div class="detail">
                   <span>西班牙制造，高</span>
                   <span class="price">￥169</span>
@@ -677,60 +755,80 @@
             <div class="top">
               <a class="top-item">
                 <div class="text">热销榜</div>
-                <img src="http://yanxuan.nosdn.127.net/d78a90f7f496656b79e4559935031958.png?imageView&quality=65&thumbnail=200x200" alt="">
+                <img
+                  src="http://yanxuan.nosdn.127.net/d78a90f7f496656b79e4559935031958.png?imageView&quality=65&thumbnail=200x200"
+                  alt="">
               </a>
               <a class="top-item">
                 <div class="text">好评榜</div>
-                <img src="http://yanxuan.nosdn.127.net/d78a90f7f496656b79e4559935031958.png?imageView&quality=65&thumbnail=200x200" alt="">
+                <img
+                  src="http://yanxuan.nosdn.127.net/d78a90f7f496656b79e4559935031958.png?imageView&quality=65&thumbnail=200x200"
+                  alt="">
               </a>
             </div>
             <div class="center">
               <a class="center-item" href="">
                 <div class="desc">居家生活榜</div>
                 <div class="pic">
-                  <img src="http://yanxuan.nosdn.127.net/2eb0624b89d2cce1a5fb13187a0c10d8.jpg?imageView&quality=65&thumbnail=200x200" alt="">
+                  <img
+                    src="http://yanxuan.nosdn.127.net/2eb0624b89d2cce1a5fb13187a0c10d8.jpg?imageView&quality=65&thumbnail=200x200"
+                    alt="">
                 </div>
               </a>
               <a class="center-item" href="">
                 <div class="desc">居家生活榜</div>
                 <div class="pic">
-                  <img src="http://yanxuan.nosdn.127.net/0d551bd5cee1656127985e1003926672.png?imageView&quality=65&thumbnail=200x200" alt="">
+                  <img
+                    src="http://yanxuan.nosdn.127.net/0d551bd5cee1656127985e1003926672.png?imageView&quality=65&thumbnail=200x200"
+                    alt="">
                 </div>
               </a>
               <a class="center-item" href="">
                 <div class="desc">居家生活榜</div>
                 <div class="pic">
-                  <img src="http://yanxuan.nosdn.127.net/0d551bd5cee1656127985e1003926672.png?imageView&quality=65&thumbnail=200x200" alt="">
+                  <img
+                    src="http://yanxuan.nosdn.127.net/0d551bd5cee1656127985e1003926672.png?imageView&quality=65&thumbnail=200x200"
+                    alt="">
                 </div>
               </a>
               <a class="center-item" href="">
                 <div class="desc">居家生活榜</div>
                 <div class="pic">
-                  <img src="http://yanxuan.nosdn.127.net/2eb0624b89d2cce1a5fb13187a0c10d8.jpg?imageView&quality=65&thumbnail=200x200" alt="">
+                  <img
+                    src="http://yanxuan.nosdn.127.net/2eb0624b89d2cce1a5fb13187a0c10d8.jpg?imageView&quality=65&thumbnail=200x200"
+                    alt="">
                 </div>
               </a>
               <a class="center-item" href="">
                 <div class="desc">居家生活榜</div>
                 <div class="pic">
-                  <img src="http://yanxuan.nosdn.127.net/0d551bd5cee1656127985e1003926672.png?imageView&quality=65&thumbnail=200x200" alt="">
+                  <img
+                    src="http://yanxuan.nosdn.127.net/0d551bd5cee1656127985e1003926672.png?imageView&quality=65&thumbnail=200x200"
+                    alt="">
                 </div>
               </a>
               <a class="center-item" href="">
                 <div class="desc">居家生活榜</div>
                 <div class="pic">
-                  <img src="http://yanxuan.nosdn.127.net/2eb0624b89d2cce1a5fb13187a0c10d8.jpg?imageView&quality=65&thumbnail=200x200" alt="">
+                  <img
+                    src="http://yanxuan.nosdn.127.net/2eb0624b89d2cce1a5fb13187a0c10d8.jpg?imageView&quality=65&thumbnail=200x200"
+                    alt="">
                 </div>
               </a>
               <a class="center-item" href="">
                 <div class="desc">居家生活榜</div>
                 <div class="pic">
-                  <img src="http://yanxuan.nosdn.127.net/0d551bd5cee1656127985e1003926672.png?imageView&quality=65&thumbnail=200x200" alt="">
+                  <img
+                    src="http://yanxuan.nosdn.127.net/0d551bd5cee1656127985e1003926672.png?imageView&quality=65&thumbnail=200x200"
+                    alt="">
                 </div>
               </a>
               <a class="center-item" href="">
                 <div class="desc">居家生活榜</div>
                 <div class="pic">
-                  <img src="http://yanxuan.nosdn.127.net/2eb0624b89d2cce1a5fb13187a0c10d8.jpg?imageView&quality=65&thumbnail=200x200" alt="">
+                  <img
+                    src="http://yanxuan.nosdn.127.net/2eb0624b89d2cce1a5fb13187a0c10d8.jpg?imageView&quality=65&thumbnail=200x200"
+                    alt="">
                 </div>
               </a>
             </div>
@@ -740,7 +838,9 @@
         <div class="weal-shop">
           <a class="weal-item">
             <div class="right">
-              <img src="http://yanxuan.nosdn.127.net/562331f0fbd1fa7113c8caedbdd0f35c.png?imageView&thumbnail=200x200&quality=75" alt="">
+              <img
+                src="http://yanxuan.nosdn.127.net/562331f0fbd1fa7113c8caedbdd0f35c.png?imageView&thumbnail=200x200&quality=75"
+                alt="">
               <div class="mask">
                 <p class="p1">￥96.8</p>
                 <p class="p2">￥129</p>
@@ -754,7 +854,9 @@
           </a>
           <a class="weal-item">
             <div class="right">
-              <img src="http://yanxuan.nosdn.127.net/562331f0fbd1fa7113c8caedbdd0f35c.png?imageView&thumbnail=200x200&quality=75" alt="">
+              <img
+                src="http://yanxuan.nosdn.127.net/562331f0fbd1fa7113c8caedbdd0f35c.png?imageView&thumbnail=200x200&quality=75"
+                alt="">
               <div class="mask">
                 <p class="p1">￥1</p>
                 <p class="p2">￥9.9</p>
@@ -768,7 +870,9 @@
           </a>
           <a class="weal-item">
             <div class="right">
-              <img src="http://yanxuan.nosdn.127.net/562331f0fbd1fa7113c8caedbdd0f35c.png?imageView&thumbnail=200x200&quality=75" alt="">
+              <img
+                src="http://yanxuan.nosdn.127.net/562331f0fbd1fa7113c8caedbdd0f35c.png?imageView&thumbnail=200x200&quality=75"
+                alt="">
             </div>
             <div class="left">
               <p class="title">福利社</p>
@@ -778,7 +882,9 @@
           </a>
           <a class="weal-item">
             <div class="right">
-              <img src="http://yanxuan.nosdn.127.net/562331f0fbd1fa7113c8caedbdd0f35c.png?imageView&thumbnail=200x200&quality=75" alt="">
+              <img
+                src="http://yanxuan.nosdn.127.net/562331f0fbd1fa7113c8caedbdd0f35c.png?imageView&thumbnail=200x200&quality=75"
+                alt="">
             </div>
             <div class="left">
               <p class="title">福利社</p>
@@ -840,7 +946,7 @@
         <div class="topic-shop">
           <div class="shop-top">
             <div class="text">
-              <span>品牌制造商直供</span>
+              <span>专题精选</span>
             </div>
             <a class="more">
               <span>更多</span>
@@ -852,21 +958,27 @@
               <ul class="swiper-wrapper">
                 <li class="swiper-slide">
                   <a class="pic" href="">
-                    <img src="https://yanxuan.nosdn.127.net/e8f232c7b25fd412afbdf4ba785e1f0d.jpg?imageView&thumbnail=575y322&enlarge=1&quality=75" alt="">
+                    <img
+                      src="https://yanxuan.nosdn.127.net/e8f232c7b25fd412afbdf4ba785e1f0d.jpg?imageView&thumbnail=575y322&enlarge=1&quality=75"
+                      alt="">
                   </a>
                   <p class="title">2019明前春茶新鲜上市</p>
                   <div class="desc">把整个春天，酿成明前一杯茶</div>
                 </li>
                 <li class="swiper-slide">
                   <a class="pic" href="">
-                    <img src="https://yanxuan.nosdn.127.net/e8f232c7b25fd412afbdf4ba785e1f0d.jpg?imageView&thumbnail=575y322&enlarge=1&quality=75" alt="">
+                    <img
+                      src="https://yanxuan.nosdn.127.net/e8f232c7b25fd412afbdf4ba785e1f0d.jpg?imageView&thumbnail=575y322&enlarge=1&quality=75"
+                      alt="">
                   </a>
                   <p class="title">2019明前春茶新鲜上市</p>
                   <div class="desc">把整个春天，酿成明前一杯茶</div>
                 </li>
                 <li class="swiper-slide">
                   <a class="pic" href="">
-                    <img src="https://yanxuan.nosdn.127.net/e8f232c7b25fd412afbdf4ba785e1f0d.jpg?imageView&thumbnail=575y322&enlarge=1&quality=75" alt="">
+                    <img
+                      src="https://yanxuan.nosdn.127.net/e8f232c7b25fd412afbdf4ba785e1f0d.jpg?imageView&thumbnail=575y322&enlarge=1&quality=75"
+                      alt="">
                   </a>
                   <p class="title">2019明前春茶新鲜上市</p>
                   <div class="desc">把整个春天，酿成明前一杯茶</div>
@@ -877,8 +989,857 @@
             </div>
           </div>
         </div>
+        <!--众筹-->
+        <div class="raise-shop">
+          <div class="shop-top">
+            <div class="text">
+              <span>众筹</span>
+            </div>
+            <a class="more">
+              <span>更多</span>
+              <i></i>
+            </a>
+          </div>
+          <div class="raise-shop-wrap">
+            <a class="raise-shop-item">
+              <div class="left">
+                <img
+                  src="https://yanxuan.nosdn.127.net/534bd66101b746846fabb4bc452d957a.png?imageView&thumbnail=210x210&quality=75"
+                  alt="">
+              </div>
+              <div class="right">
+                <p class="name">诸事如意猪猪壶</p>
+                <p class="price">￥588起</p>
+                <div class="percent">
+                  <div class="left">
+                    <div class="color"></div>
+                  </div>
+                  <div class="right">7%</div>
+                </div>
+                <div class="num">8人以支持</div>
+              </div>
+            </a>
+            <a class="raise-shop-item">
+              <div class="left">
+                <img
+                  src="https://yanxuan.nosdn.127.net/534bd66101b746846fabb4bc452d957a.png?imageView&thumbnail=210x210&quality=75"
+                  alt="">
+              </div>
+              <div class="right">
+                <p class="name">诸事如意猪猪壶</p>
+                <p class="price">￥588起</p>
+                <div class="percent">
+                  <div class="left">
+                    <div class="color"></div>
+                  </div>
+                  <div class="right">200%</div>
+                </div>
+                <div class="num">300人以支持</div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!--重复-->
+        <div class="repeat-shop repeat-shop1">
+          <a class="bgc"></a>
+          <div class="repeat-shop-wrap repeat-shop-wrap1">
+            <div class="repeat-wrap repeat-wrap1">
+              <ul>
+                <li class="item">
+                  <a>
+                    <img
+                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
+                      alt="">
+                    <div class="detail">
+                      <span>西班牙制造，高</span>
+                      <span class="price">￥169</span>
+                    </div>
+                    <div class="small">
+                      <span>西</span>
+                      <span>班</span>
+                      <span>牙</span>
+                      <span>制</span>
+                      <span>造</span>
+                    </div>
+                    <div class="tag">
+                      <span class="goodPrice">限时购</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="item">
+                  <a>
+                    <img
+                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
+                      alt="">
+                    <div class="detail">
+                      <span>西班牙制造，高</span>
+                      <span class="price">￥169</span>
+                    </div>
+                    <div class="small">
+                      <span>西</span>
+                      <span>班</span>
+                      <span>牙</span>
+                      <span>制</span>
+                      <span>造</span>
+                    </div>
+                    <div class="tag">
+                      <span class="goodPrice">限时购</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="item">
+                  <a>
+                    <img
+                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
+                      alt="">
+                    <div class="detail">
+                      <span>西班牙制造，高</span>
+                      <span class="price">￥169</span>
+                    </div>
+                    <div class="small">
+                      <span>西</span>
+                      <span>班</span>
+                      <span>牙</span>
+                      <span>制</span>
+                      <span>造</span>
+                    </div>
+                    <div class="tag">
+                      <span class="goodPrice">限时购</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="item">
+                  <a>
+                    <img
+                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
+                      alt="">
+                    <div class="detail">
+                      <span>西班牙制造，高</span>
+                      <span class="price">￥169</span>
+                    </div>
+                    <div class="small">
+                      <span>西</span>
+                      <span>班</span>
+                      <span>牙</span>
+                      <span>制</span>
+                      <span>造</span>
+                    </div>
+                    <div class="tag">
+                      <span class="goodPrice">限时购</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="item">
+                  <a>
+                    <img
+                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
+                      alt="">
+                    <div class="detail">
+                      <span>西班牙制造，高</span>
+                      <span class="price">￥169</span>
+                    </div>
+                    <div class="small">
+                      <span>西</span>
+                      <span>班</span>
+                      <span>牙</span>
+                      <span>制</span>
+                      <span>造</span>
+                    </div>
+                    <div class="tag">
+                      <span class="goodPrice">限时购</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="item">
+                  <a>
+                    <img
+                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
+                      alt="">
+                    <div class="detail">
+                      <span>西班牙制造，高</span>
+                      <span class="price">￥169</span>
+                    </div>
+                    <div class="small">
+                      <span>西</span>
+                      <span>班</span>
+                      <span>牙</span>
+                      <span>制</span>
+                      <span>造</span>
+                    </div>
+                    <div class="tag">
+                      <span class="goodPrice">限时购</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="item">
+                  <a>
+                    <img
+                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
+                      alt="">
+                    <div class="detail">
+                      <span>西班牙制造，高</span>
+                      <span class="price">￥169</span>
+                    </div>
+                    <div class="small">
+                      <span>西</span>
+                      <span>班</span>
+                      <span>牙</span>
+                      <span>制</span>
+                      <span>造</span>
+                    </div>
+                    <div class="tag">
+                      <span class="goodPrice">限时购</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="repeat-shop repeat-shop2">
+          <a class="bgc"></a>
+          <div class="repeat-shop-wrap repeat-shop-wrap2">
+            <div class="repeat-wrap repeat-wrap2">
+              <ul>
+                <li class="item">
+                  <a>
+                    <img
+                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
+                      alt="">
+                    <div class="detail">
+                      <span>西班牙制造，高</span>
+                      <span class="price">￥169</span>
+                    </div>
+                    <div class="small">
+                      <span>西</span>
+                      <span>班</span>
+                      <span>牙</span>
+                      <span>制</span>
+                      <span>造</span>
+                    </div>
+                    <div class="tag">
+                      <span class="goodPrice">限时购</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="item">
+                  <a>
+                    <img
+                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
+                      alt="">
+                    <div class="detail">
+                      <span>西班牙制造，高</span>
+                      <span class="price">￥169</span>
+                    </div>
+                    <div class="small">
+                      <span>西</span>
+                      <span>班</span>
+                      <span>牙</span>
+                      <span>制</span>
+                      <span>造</span>
+                    </div>
+                    <div class="tag">
+                      <span class="goodPrice">限时购</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="item">
+                  <a>
+                    <img
+                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
+                      alt="">
+                    <div class="detail">
+                      <span>西班牙制造，高</span>
+                      <span class="price">￥169</span>
+                    </div>
+                    <div class="small">
+                      <span>西</span>
+                      <span>班</span>
+                      <span>牙</span>
+                      <span>制</span>
+                      <span>造</span>
+                    </div>
+                    <div class="tag">
+                      <span class="goodPrice">限时购</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="item">
+                  <a>
+                    <img
+                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
+                      alt="">
+                    <div class="detail">
+                      <span>西班牙制造，高</span>
+                      <span class="price">￥169</span>
+                    </div>
+                    <div class="small">
+                      <span>西</span>
+                      <span>班</span>
+                      <span>牙</span>
+                      <span>制</span>
+                      <span>造</span>
+                    </div>
+                    <div class="tag">
+                      <span class="goodPrice">限时购</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="item">
+                  <a>
+                    <img
+                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
+                      alt="">
+                    <div class="detail">
+                      <span>西班牙制造，高</span>
+                      <span class="price">￥169</span>
+                    </div>
+                    <div class="small">
+                      <span>西</span>
+                      <span>班</span>
+                      <span>牙</span>
+                      <span>制</span>
+                      <span>造</span>
+                    </div>
+                    <div class="tag">
+                      <span class="goodPrice">限时购</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="item">
+                  <a>
+                    <img
+                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
+                      alt="">
+                    <div class="detail">
+                      <span>西班牙制造，高</span>
+                      <span class="price">￥169</span>
+                    </div>
+                    <div class="small">
+                      <span>西</span>
+                      <span>班</span>
+                      <span>牙</span>
+                      <span>制</span>
+                      <span>造</span>
+                    </div>
+                    <div class="tag">
+                      <span class="goodPrice">限时购</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="item">
+                  <a>
+                    <img
+                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
+                      alt="">
+                    <div class="detail">
+                      <span>西班牙制造，高</span>
+                      <span class="price">￥169</span>
+                    </div>
+                    <div class="small">
+                      <span>西</span>
+                      <span>班</span>
+                      <span>牙</span>
+                      <span>制</span>
+                      <span>造</span>
+                    </div>
+                    <div class="tag">
+                      <span class="goodPrice">限时购</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="repeat-shop repeat-shop3">
+          <a class="bgc"></a>
+          <div class="repeat-shop-wrap repeat-shop-wrap3">
+            <div class="repeat-wrap repeat-wrap3">
+              <ul>
+                <li class="item">
+                  <a>
+                    <img
+                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
+                      alt="">
+                    <div class="detail">
+                      <span>西班牙制造，高</span>
+                      <span class="price">￥169</span>
+                    </div>
+                    <div class="small">
+                      <span>西</span>
+                      <span>班</span>
+                      <span>牙</span>
+                      <span>制</span>
+                      <span>造</span>
+                    </div>
+                    <div class="tag">
+                      <span class="goodPrice">限时购</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="item">
+                  <a>
+                    <img
+                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
+                      alt="">
+                    <div class="detail">
+                      <span>西班牙制造，高</span>
+                      <span class="price">￥169</span>
+                    </div>
+                    <div class="small">
+                      <span>西</span>
+                      <span>班</span>
+                      <span>牙</span>
+                      <span>制</span>
+                      <span>造</span>
+                    </div>
+                    <div class="tag">
+                      <span class="goodPrice">限时购</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="item">
+                  <a>
+                    <img
+                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
+                      alt="">
+                    <div class="detail">
+                      <span>西班牙制造，高</span>
+                      <span class="price">￥169</span>
+                    </div>
+                    <div class="small">
+                      <span>西</span>
+                      <span>班</span>
+                      <span>牙</span>
+                      <span>制</span>
+                      <span>造</span>
+                    </div>
+                    <div class="tag">
+                      <span class="goodPrice">限时购</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="item">
+                  <a>
+                    <img
+                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
+                      alt="">
+                    <div class="detail">
+                      <span>西班牙制造，高</span>
+                      <span class="price">￥169</span>
+                    </div>
+                    <div class="small">
+                      <span>西</span>
+                      <span>班</span>
+                      <span>牙</span>
+                      <span>制</span>
+                      <span>造</span>
+                    </div>
+                    <div class="tag">
+                      <span class="goodPrice">限时购</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="item">
+                  <a>
+                    <img
+                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
+                      alt="">
+                    <div class="detail">
+                      <span>西班牙制造，高</span>
+                      <span class="price">￥169</span>
+                    </div>
+                    <div class="small">
+                      <span>西</span>
+                      <span>班</span>
+                      <span>牙</span>
+                      <span>制</span>
+                      <span>造</span>
+                    </div>
+                    <div class="tag">
+                      <span class="goodPrice">限时购</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="item">
+                  <a>
+                    <img
+                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
+                      alt="">
+                    <div class="detail">
+                      <span>西班牙制造，高</span>
+                      <span class="price">￥169</span>
+                    </div>
+                    <div class="small">
+                      <span>西</span>
+                      <span>班</span>
+                      <span>牙</span>
+                      <span>制</span>
+                      <span>造</span>
+                    </div>
+                    <div class="tag">
+                      <span class="goodPrice">限时购</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="item">
+                  <a>
+                    <img
+                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
+                      alt="">
+                    <div class="detail">
+                      <span>西班牙制造，高</span>
+                      <span class="price">￥169</span>
+                    </div>
+                    <div class="small">
+                      <span>西</span>
+                      <span>班</span>
+                      <span>牙</span>
+                      <span>制</span>
+                      <span>造</span>
+                    </div>
+                    <div class="tag">
+                      <span class="goodPrice">限时购</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="repeat-shop repeat-shop4">
+          <a class="bgc"></a>
+          <div class="repeat-shop-wrap repeat-shop-wrap4">
+            <div class="repeat-wrap repeat-wrap4">
+              <ul>
+                <li class="item">
+                  <a>
+                    <img
+                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
+                      alt="">
+                    <div class="detail">
+                      <span>西班牙制造，高</span>
+                      <span class="price">￥169</span>
+                    </div>
+                    <div class="small">
+                      <span>西</span>
+                      <span>班</span>
+                      <span>牙</span>
+                      <span>制</span>
+                      <span>造</span>
+                    </div>
+                    <div class="tag">
+                      <span class="goodPrice">限时购</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="item">
+                  <a>
+                    <img
+                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
+                      alt="">
+                    <div class="detail">
+                      <span>西班牙制造，高</span>
+                      <span class="price">￥169</span>
+                    </div>
+                    <div class="small">
+                      <span>西</span>
+                      <span>班</span>
+                      <span>牙</span>
+                      <span>制</span>
+                      <span>造</span>
+                    </div>
+                    <div class="tag">
+                      <span class="goodPrice">限时购</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="item">
+                  <a>
+                    <img
+                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
+                      alt="">
+                    <div class="detail">
+                      <span>西班牙制造，高</span>
+                      <span class="price">￥169</span>
+                    </div>
+                    <div class="small">
+                      <span>西</span>
+                      <span>班</span>
+                      <span>牙</span>
+                      <span>制</span>
+                      <span>造</span>
+                    </div>
+                    <div class="tag">
+                      <span class="goodPrice">限时购</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="item">
+                  <a>
+                    <img
+                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
+                      alt="">
+                    <div class="detail">
+                      <span>西班牙制造，高</span>
+                      <span class="price">￥169</span>
+                    </div>
+                    <div class="small">
+                      <span>西</span>
+                      <span>班</span>
+                      <span>牙</span>
+                      <span>制</span>
+                      <span>造</span>
+                    </div>
+                    <div class="tag">
+                      <span class="goodPrice">限时购</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="item">
+                  <a>
+                    <img
+                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
+                      alt="">
+                    <div class="detail">
+                      <span>西班牙制造，高</span>
+                      <span class="price">￥169</span>
+                    </div>
+                    <div class="small">
+                      <span>西</span>
+                      <span>班</span>
+                      <span>牙</span>
+                      <span>制</span>
+                      <span>造</span>
+                    </div>
+                    <div class="tag">
+                      <span class="goodPrice">限时购</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="item">
+                  <a>
+                    <img
+                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
+                      alt="">
+                    <div class="detail">
+                      <span>西班牙制造，高</span>
+                      <span class="price">￥169</span>
+                    </div>
+                    <div class="small">
+                      <span>西</span>
+                      <span>班</span>
+                      <span>牙</span>
+                      <span>制</span>
+                      <span>造</span>
+                    </div>
+                    <div class="tag">
+                      <span class="goodPrice">限时购</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="item">
+                  <a>
+                    <img
+                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
+                      alt="">
+                    <div class="detail">
+                      <span>西班牙制造，高</span>
+                      <span class="price">￥169</span>
+                    </div>
+                    <div class="small">
+                      <span>西</span>
+                      <span>班</span>
+                      <span>牙</span>
+                      <span>制</span>
+                      <span>造</span>
+                    </div>
+                    <div class="tag">
+                      <span class="goodPrice">限时购</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="repeat-shop repeat-shop5">
+          <a class="bgc"></a>
+          <div class="repeat-shop-wrap repeat-shop-wrap5">
+            <div class=" repeat-wrap repeat-wrap5">
+              <ul>
+                <li class="item">
+                  <a>
+                    <img
+                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
+                      alt="">
+                    <div class="detail">
+                      <span>西班牙制造，高</span>
+                      <span class="price">￥169</span>
+                    </div>
+                    <div class="small">
+                      <span>西</span>
+                      <span>班</span>
+                      <span>牙</span>
+                      <span>制</span>
+                      <span>造</span>
+                    </div>
+                    <div class="tag">
+                      <span class="goodPrice">限时购</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="item">
+                  <a>
+                    <img
+                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
+                      alt="">
+                    <div class="detail">
+                      <span>西班牙制造，高</span>
+                      <span class="price">￥169</span>
+                    </div>
+                    <div class="small">
+                      <span>西</span>
+                      <span>班</span>
+                      <span>牙</span>
+                      <span>制</span>
+                      <span>造</span>
+                    </div>
+                    <div class="tag">
+                      <span class="goodPrice">限时购</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="item">
+                  <a>
+                    <img
+                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
+                      alt="">
+                    <div class="detail">
+                      <span>西班牙制造，高</span>
+                      <span class="price">￥169</span>
+                    </div>
+                    <div class="small">
+                      <span>西</span>
+                      <span>班</span>
+                      <span>牙</span>
+                      <span>制</span>
+                      <span>造</span>
+                    </div>
+                    <div class="tag">
+                      <span class="goodPrice">限时购</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="item">
+                  <a>
+                    <img
+                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
+                      alt="">
+                    <div class="detail">
+                      <span>西班牙制造，高</span>
+                      <span class="price">￥169</span>
+                    </div>
+                    <div class="small">
+                      <span>西</span>
+                      <span>班</span>
+                      <span>牙</span>
+                      <span>制</span>
+                      <span>造</span>
+                    </div>
+                    <div class="tag">
+                      <span class="goodPrice">限时购</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="item">
+                  <a>
+                    <img
+                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
+                      alt="">
+                    <div class="detail">
+                      <span>西班牙制造，高</span>
+                      <span class="price">￥169</span>
+                    </div>
+                    <div class="small">
+                      <span>西</span>
+                      <span>班</span>
+                      <span>牙</span>
+                      <span>制</span>
+                      <span>造</span>
+                    </div>
+                    <div class="tag">
+                      <span class="goodPrice">限时购</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="item">
+                  <a>
+                    <img
+                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
+                      alt="">
+                    <div class="detail">
+                      <span>西班牙制造，高</span>
+                      <span class="price">￥169</span>
+                    </div>
+                    <div class="small">
+                      <span>西</span>
+                      <span>班</span>
+                      <span>牙</span>
+                      <span>制</span>
+                      <span>造</span>
+                    </div>
+                    <div class="tag">
+                      <span class="goodPrice">限时购</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="item">
+                  <a>
+                    <img
+                      src="http://yanxuan.nosdn.127.net/d9e41913161dd7a12dd21d70058a6e69.png?imageView&quality=65&thumbnail=330x330"
+                      alt="">
+                    <div class="detail">
+                      <span>西班牙制造，高</span>
+                      <span class="price">￥169</span>
+                    </div>
+                    <div class="small">
+                      <span>西</span>
+                      <span>班</span>
+                      <span>牙</span>
+                      <span>制</span>
+                      <span>造</span>
+                    </div>
+                    <div class="tag">
+                      <span class="goodPrice">限时购</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </Content>
+    <Footer>
+      <div class="footer-wrap">
+        <div class="content">
+          <div class="btn">
+            <a href="">下载APP</a>
+            <a href="">电脑版</a>
+          </div>
+          <p>
+            <span>网易公司版权所有 © 1997-2019</span><br>
+            <span>食品经营许可证：JY13301080111719</span>
+          </p>
+        </div>
+      </div>
+    </Footer>
+    <a class="gift">
+      <i class="icon"></i>
+    </a>
+    <i class="GO"></i>
   </div>
 </template>
 
@@ -888,18 +1849,40 @@
   import 'swiper/dist/css/swiper.min.css'
 
   export default {
-    methods:{
-      _initScroll(){
-        new BScroll('.header-nav-some-wrap',{
+    methods: {
+      // BScroll 滑动
+      _initScroll () {
+        new BScroll('.header-nav-some-wrap', {
           scrollX: true,
-          click:true
+          click: true
         })
+        new BScroll('.repeat-shop1 .repeat-shop-wrap1', {
+          scrollX: true,
+          click: true
+        })
+        new BScroll('.repeat-shop2 .repeat-shop-wrap2', {
+          scrollX: true,
+          click: true
+        })
+        new BScroll('.repeat-shop3 .repeat-shop-wrap3', {
+          scrollX: true,
+          click: true
+        })
+        new BScroll('.repeat-shop4 .repeat-shop-wrap4', {
+          scrollX: true,
+          click: true
+        })
+        new BScroll('.repeat-shop5 .repeat-shop-wrap5', {
+          scrollX: true,
+          click: true
+        })
+
       }
     },
 
-    mounted () {
+    mounted ()  {
       var mySwiper = new Swiper('.firstView .swiper-container', {
-        autoplay:true,
+        autoplay: true,
         loop: true, // 循环模式选项
         // 如果需要分页器
         pagination: {
@@ -926,16 +1909,16 @@
 </script>
 
 
-
 <style lang="stylus" rel="stylesheet/stylus" scoped>
   @import "../../common/stylus/mixins.styl"
   #Container
-    height 200rem
+
     Header
       height 148px
       background #fff
       border-bottom 1px solid #d9d9d9;
       position relative
+
       .header-wrap
         position fixed !important
         left 0
@@ -943,6 +1926,7 @@
         width 100%
         z-index 99
         background #fff
+
         .logo
           display flex
           align-items center
@@ -1013,9 +1997,9 @@
                 text-align center
                 color #333
                 font-size .37333rem
-                border-bottom 2px solid red
                 &.active
                   color #b4282d
+                  border-bottom 2px solid #b4282d
 
           .down-wrap
             float: left
@@ -1029,7 +2013,7 @@
 
             .down-left
               position: absolute
-              top: 0rem
+              top: 0
               right 1rem
               width 0.8rem
               height 0.8rem
@@ -1054,26 +2038,32 @@
       background #eee
       .swiper-container
         height 4.93333rem
+
         img
           /*height 4.93333rem*/
           width 100%
+
         .swiper-pagination
           bottom .4rem
           width: 100%
-        >>>.swiper-pagination-bullet
+
+        >>> .swiper-pagination-bullet
           width .53333rem
           height .05333rem
           display inline-block
           background #fff
           opacity .4
           border-radius 0
-        >>>.swiper-pagination-bullet-active
+
+        >>> .swiper-pagination-bullet-active
           opacity 1
           background #fff
           border-radius 0
+
       .swiper-bottom
         background #fff
         color #b4282d
+
         ul
           height 0.96rem
           padding-left 0.4rem
@@ -1082,9 +2072,11 @@
           flex-flow nowrap
           align-items center
           zoom 1
+
           li
             flex 1
             float left
+
             a
               display inline-block
               vertical-align middle
@@ -1096,6 +2088,7 @@
                 background-size 100% 100%
                 width 0.42667rem
                 height 0.42667rem
+
               span
                 color #b4282d
                 display inline-block
@@ -1113,8 +2106,10 @@
           background #fff
           width 100%
           height 5.22667rem
+
           ul
             width 100%
+
             li
               /*margin-top 0.12rem*/
               display block
@@ -1122,10 +2117,12 @@
               height 2.08rem
               float left
               margin 0.13333rem 0.26667rem 0
+
               img
                 display block
                 width 1.46667rem
                 height 1.46667rem
+
               p
                 margin-top 0.13333rem
                 text-align: center
@@ -1139,15 +2136,18 @@
           height 2.62222rem
           background-size 100% 100%
           background #fff
+
           .queen-bottom
             width 100%
             height 2.71111rem
             background-size 100% 100%
+
             a
               display block
               float left
               width 50%
               height 100%
+
         .staff
           width 100%
           height 2.13333rem
@@ -1164,6 +2164,7 @@
           margin-bottom 0.26667rem
           overflow hidden
           background #fff
+
           a
             box-sizing border-box
             display block
@@ -1174,18 +2175,21 @@
             padding 0.26667rem 0 0 0.26667rem
             border-radius 0.05333rem
             background url(https://yanxuan.nosdn.127.net/b143c18172b5433310ff1f2adf281792.png?imageView&thumbnail=343x264&quality=75)
+
             .title
               width 100%
               padding-left 0.13333rem
               font-family PingFangSC-Medium
               font-size 0.42667rem
               color #333
+
             .desc
               width 100%
               margin 0.2rem 0
               font-size 0.32rem
               color #7f7f7f
               padding-left 0.13333rem
+
             img
               width 2rem
               height 2rem
@@ -1196,28 +2200,34 @@
           width 100%
           background #fff
           margin-bottom 0.26667rem
+
           .text
             height 1.3333rem
             line-height 1.3333rem
             padding 0 0.4rem
             background #fff
             overflow hidden
+
             span
               float left
               font-size 0.42667rem
+
           .swiper-container
             .swiper-pagination
               bottom .32rem
               width: 100%
-            >>>.swiper-pagination-bullet
+
+            >>> .swiper-pagination-bullet
               width .16rem
               height .16rem
               background #d9d9d9
               border-radius 50%
               border none
               vertical-align middle
-            >>>.swiper-pagination-bullet-active
+
+            >>> .swiper-pagination-bullet-active
               background red
+
             .swiper-wrapper
               .swiper-slide
                 width 750px
@@ -1226,15 +2236,18 @@
         .time-shop
           background #fff
           margin-bottom 0.26667rem
+
           .time-shop-center
             overflow hidden
             padding 0 0.1rem 0 0.4rem
+
             a
               display block
               color #333
               float left
               margin-right 0.22rem
               padding-bottom 0.4rem
+
               .shop-img
                 height 2.888rem
                 width 2.88rem
@@ -1245,11 +2258,13 @@
               .price
                 float left
                 padding-left 0.26667rem
+
                 .newPrice
                   float left
                   color #b4282d
                   margin-right 0.16rem
                   font-size 0.37333rem
+
                 .oldPrice
                   float left
                   color #7f7f7f
@@ -1262,6 +2277,7 @@
           background #fff
           margin-bottom 0.26667rem
           padding-bottom 0.34667rem
+
           .new-shop-center
             width 750px
             height auto
@@ -1271,6 +2287,7 @@
           margin-bottom 0.26667rem
           padding-bottom 0.4rem
           background #fff
+
           .pop-shop-wrap
             display flex
             align-items center
@@ -1279,12 +2296,14 @@
             width 9.2rem
             height 3.7333rem
             color #333
+
             .pop-shop-img
               height 3.7333rem
               background url(//yanxuan.nosdn.127.net/3235bc71e70f134b5499316fc74337d4.png)
               background-size 100% 100%
               margin-right 0.4rem
               width 3.7333rem
+
             .pop-shop-tag
               .goodPrice-wrap
                 margin 0 0 0.16rem
@@ -1293,6 +2312,7 @@
                 width 4.6667rem
                 z-index 1
                 overflow hidden
+
                 .goodPrice
                   height 0.4rem
                   font-size 0.26667rem
@@ -1303,9 +2323,10 @@
                   padding 0 0.10667rem
                   line-height 0.37333rem
                   color #b4282d
-                  background rgba(255,255,255,0.9)
+                  background rgba(255, 255, 255, 0.9)
                   border 1px solid #b4282d
                   vertical-align top
+
               .name
                 width 4.6667rem
                 height 0.5rem
@@ -1313,6 +2334,7 @@
                 text-overflow ellipsis
                 white-space nowrap
                 overflow hidden
+
               .desc
                 height 0.5rem
                 color #7f7f7f
@@ -1321,11 +2343,11 @@
                 text-overflow ellipsis
                 white-space nowrap
                 font-size 0.32rem
+
               .price
                 height 0.5rem
                 color #b4282d
                 font-size 0.37333rem
-
 
 
           .pop-ul
@@ -1337,9 +2359,11 @@
           margin-bottom 0.26667rem
           padding-bottom 0.4rem
           background #fff
+
           .hot-shop-wrap
             overflow hidden
             padding 0 0.26667rem 0.26667rem 0.4rem
+
             .top
               .top-item
                 width 4.5333rem
@@ -1348,6 +2372,7 @@
                 margin 0 0.13333rem 0.13333rem 0
                 position relative
                 background #f9f3e4
+
                 .text
                   padding-left 0.32rem
                   color #333
@@ -1355,6 +2380,7 @@
                   margin-top 0.88rem
                   z-index 5
                   position relative
+
                 ::before
                   content ''
                   position: absolute
@@ -1363,6 +2389,7 @@
                   width 0.64rem
                   height 0.05333rem
                   background #333
+
                 img
                   position absolute
                   right 0
@@ -1380,15 +2407,18 @@
                 border-radius 0.05333rem
                 float left
                 margin 0 0.13333rem 0.13333rem 0
+
                 .desc
                   margin-top 0.13333rem
                   text-align: center
                   font-size 0.32rem
                   color #333
+
                 .pic
                   width 1.6rem
                   height 1.6rem
                   margin 0.02667rem 0 0 0.30667rem
+
                   img
                     display inline
                     width 100%
@@ -1400,6 +2430,7 @@
           background #fff
           overflow hidden
           margin-bottom 0.2667rem
+
           .weal-item
             background url(http://yanxuan.nosdn.127.net/dc4bbc16d3946fddb71382f8132210b9.png?imageView&thumbnail=343x220&quality=75)
             display block
@@ -1411,16 +2442,19 @@
             font-size 0.32rem
             padding 0.26667rem 0 0 0.4rem
             position relative
+
             .right
               position absolute
               right 0
               top 0
               width 2.66667rem
               height 2.66667rem
+
               img
                 display inline
                 height auto
                 width 100%
+
               .mask
                 position absolute
                 top 0.4rem
@@ -1433,10 +2467,12 @@
                 padding-top 0.13333rem
                 color #fff
                 text-align: center
+
                 .p1
                   padding-top 0.15rem
                   padding-left -0.1rem
                   font-size 0.32rem
+
                 .p2
                   font-size 0.26667rem
 
@@ -1444,18 +2480,22 @@
 
             .left
               position relative
+
               .title
                 height 0.5rem
                 line-height 0.5rem
                 font-size 0.42667rem
+
               .desc
                 height 0.4rem
                 line-height 0.4rem
                 color #7f7f7f
+
               .name
                 height 0.4rem
                 line-height 0.4rem
                 color #b4282d
+
         .brand-shop
           .list
             position: relative
@@ -1463,6 +2503,7 @@
             background #fff
             margin-bottom 0.26667rem
             padding 0 0.34667rem 0.34667rem 0.4rem
+
             .item
               background url(http://yanxuan.nosdn.127.net/74e2ea8f81004d0a60f90fc8e4649058.png?imageView&thumbnail=343y260&enlarge=1)
               background-size 100% 100%
@@ -1473,6 +2514,7 @@
               height 3.46667rem
               overflow hidden
               background-color #f4f4f4
+
               .text
                 position: absolute
                 left 0
@@ -1480,6 +2522,7 @@
                 padding-top 0.30667rem
                 width 100%
                 text-align: center
+
                 p
                   text-overflow ellipsis
                   white-space nowrap
@@ -1488,12 +2531,15 @@
                   font-size 0.37333rem
                   line-height 0.45333rem
                   margin-bottom 0.04rem
+
                 .desc
                   display flex
                   justify-content center
+
                   span
                     font-size 0.32rem
                     color #7f7f7f
+
                   .right
                     display inline-block
                     width 0.85333rem
@@ -1505,35 +2551,40 @@
                     color #fff
 
 
-
         .topic-shop
           background #fff
           padding 0 0.4rem 0.4rem
+          margin-bottom 0.26667rem
           overflow hidden
+
           .topic-swiper-wrap
             .swiper-container
               overflow visible
+
             .swiper-wrapper
-              height 378px
               width 100%
+
               li
                 margin-left 31.25px
                 width 6.4rem
                 padding-bottom 0.32rem
                 background #f5f5f5
                 overflow visible
+
                 .pic
                   display block
                   width 6.4rem
                   height 3.56rem
                   margin-bottom 0.21333rem
                   overflow visible
+
                   img
                     width 100%
                     height auto
                     position: relative
                     left 50%
                     transform translateX(-50%)
+
                 .title
                   width 5.46667rem
                   font-size 0.37333rem
@@ -1542,6 +2593,7 @@
                   margin-bottom 0.08rem
                   overflow visible
                   padding 0 0.26667rem
+
                 .desc
                   text-overflow ellipsis
                   white-space nowrap
@@ -1552,25 +2604,178 @@
                   padding 0 0.2666rem
 
 
+        .raise-shop
+          background #fff
+          margin-bottom 0.2667rem
+
+          .raise-shop-wrap
+            border-top 1px solid #d8d8d8
+            padding-bottom 0.4rem
+
+            .raise-shop-item
+              display flex
+              flex-direction row
+              flex-wrap nowrap
+              align-items center
+              padding 0.4rem 0.4rem 0
+              color #333
+
+              .left
+                margin-right 0.4rem
+                background-color #f4f4f4
+
+                img
+                  display inline
+                  width 2.8rem
+                  height 2.8rem
 
 
+              .right
+                .name
+                  font-size 0.37333rem
+                  width 6rem
+                  white-space nowrap
+                  text-overflow ellipsis
+                  overflow hidden
+
+                .price
+                  font-size 0.42667rem
+                  color #b4282d
+
+                .percent
+                  position: relative
+                  border-radius 0.04rem
+
+                  .left
+                    width 4.8rem
+                    height 0.08rem
+                    border-radius 0.04rem
+                    overflow hidden
+                    position: relative
+                    margin-top 0.29333rem
+                    background #d8d8d8
+
+                    .color
+                      width 7%
+                      position: absolute
+                      top: 0
+                      left: 0
+                      z-index 2
+                      height 100%
+                      background #fea438
+
+                  .right
+                    position: absolute
+                    right: 0
+                    top -0.2rem
+                    font-size 0.32rem
+                    color #7f7f7f
+
+                .num
+                  margin-top 0.2rem
+                  font-size 0.32rem
+                  color #7f7f7f
+
+        .repeat-shop
+          background #fff
+          margin-bottom 0.26667rem
+          .bgc
+            background url(https://yanxuan.nosdn.127.net/61057b244c63dec382afb5385f0d4270.jpg?imageView&thumbnail=750x0&quality=75)
+            background-size 100% 100%
+            display block
+            width 100%
+            height 4.9333rem
+            margin-bottom 0.26667rem
+
+          .repeat-shop-wrap
+            background #fff
+            display flex
+            overflow hidden
+            flex-wrap nowrap
+
+            .repeat-wrap
+              background #fff
+              display flex
+              flex 2
+              /*height auto*/
+              padding 0 0.4rem 0.4rem
+
+              ul
+                overflow hidden
+                display flex
+                height auto
+                position: relative
+
+
+    Footer
+      margin-bottom 100px
+      .footer-wrap
+        border-top 1px solid rgba(0,0,0,0.15)
+        background-color: #414141
+        .content
+          text-align: center
+          padding 0.72rem 0.26667rem 0.37333rem
+          .btn
+            a
+              height 0.82667rem
+              width 2.23999rem
+              line-height 0.82667rem
+              margin-right 0.66667rem
+              font-size 0.32rem
+              color #fff
+              border 1px solid #999
+              display inline-block
+              vertical-align middle
+              text-align: center
+          p
+            margin-top 0.48rem
+            font-size 0.32rem
+            line-height 0.42667rem
+            color #999
+    .gift
+      position: fixed
+      right: 0
+      bottom 3.2rem
+      display block
+      z-index 10
+      .icon
+        display inline-block
+        vertical-align middle
+        background-image url(//yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/wapNewUserEntry-b69d0624fd.png)
+        background-repeat no-repeat
+        background-size 100% 100%
+        width 1.49333rem
+        height 1.06667rem
+
+    .GO
+      position: fixed
+      right 0.30667rem
+      bottom 1.6rem
+      width 1.09333rem
+      height 1.09333rem
+      background-image url(//yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/goToTop-f502426678.png)
+      background-size 1.09333rem 1.09333rem
+      z-index 10
   /*相同样式*/
   /*分类头部*/
   .shop-top
     box-sizing border-box
     width 100%
     height 1.3333rem
-    line-height  1.3333rem
+    line-height 1.3333rem
     padding 0 0.4rem
     background #fff
     overflow hidden
+
     .text
       font-size 0.42667rem
       float left
+
       .timer
         vertical-align middle
         margin -0.08rem 0 0 0.16rem
         display inline-block
+
         span
           display inline-block
           font-size 0.32rem
@@ -1581,12 +2786,14 @@
           background #333
           color #fff
           margin 0 0.13333rem
+
     .more
       float right
       display block
       font-size 0.37333rem
       line-height 1.3333rem
       color #333
+
       i
         width 0.17333rem
         height 0.30667rem
@@ -1604,10 +2811,12 @@
     float left
     padding 0 0 0.17333rem !important
     position: relative
+
     a
       width 100%
       color #333
       display block
+
       img
         display block
         top 0
@@ -1616,6 +2825,7 @@
         height 2.88rem
         background #f5f5f5
         margin-bottom 0.1rem
+
       .detail
         margin-top 0
         margin-bottom 0.048rem
@@ -1639,10 +2849,12 @@
         display flex
         flex-direction column
         justify-content center
+
         span
           text-align: center
           line-height 1
           font-size 0.26667rem
+
       .tag
         width 100%
         z-index 1
@@ -1650,6 +2862,7 @@
         height 0.41333rem
         overflow hidden
         padding-left 0
+
         .goodPrice
           margin-left 0.16rem
           float left
@@ -1664,7 +2877,8 @@
           color #b4292d
           border 1px solid #b4282d
           zoom 1
-          background rgba(255,255,255,0.9)
+          background rgba(255, 255, 255, 0.9)
+
         .bond
           float left
           display inline-block
@@ -1675,7 +2889,7 @@
           font-size 0.26667rem
           color #b4292d
           zoom 1
-          background rgba(255,255,255,0.9)
+          background rgba(255, 255, 255, 0.9)
           background url(//yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/coupon-tag-77f3e7728a.png) no-repeat
           background-size 100%
           padding 0 0.17333rem

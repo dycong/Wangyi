@@ -6,13 +6,13 @@
       </span>
       <span>首页</span>
     </span>
-    <span class="footer_item" :class="{on:$route.path === '/sort'}" @click="goTo('/sort')">
+    <span class="footer_item" :class="{on:$route.path === '/sort/sortList'}" @click="goTo('/sort')">
       <span class="item_icon">
         <i class="iconfont icon-chouti"></i>
       </span>
       <span>分类</span>
     </span>
-    <span class="footer_item" :class="{on:$route.path === '/shiwu'}" @click="goTo('/shiwu')">
+    <span class="footer_item" :class="{on:$route.path === '/shiwu/find'}" @click="goTo('/shiwu')">
       <span class="item_icon">
         <i class="iconfont icon-liwu"></i>
       </span>
@@ -64,11 +64,11 @@
       margin 10px
       color #999999
       &.on
-        color red
+        color #b4282d
       span
-        font-size 24px
+        font-size 23px
         margin-top 4px
         margin-bottom 4px
         .iconfont
-          font-size 44px
+          font-size 40px
 </style>
