@@ -16,7 +16,6 @@
 </template>
 
 <script>
-  import Loading from '../../../static/loading.gif'
 
   export default {
     props: {
@@ -47,6 +46,7 @@
       overflow hidden
       width 691px
       height 376px
+      background #eee
 
       img
         width 100%

@@ -5,7 +5,7 @@
         <div class="info">
           <div class="name">
             <span class="ava">
-              <img :src="topic.avatar" alt="">
+              <img v-lazy="topic.avatar" alt="">
             </span>
             <span>{{topic.nickname}}</span>
           </div>
@@ -21,7 +21,7 @@
           </div>
         </div>
         <div class="pic">
-          <img :src="topic.picUrl" alt="">
+          <img v-lazy="topic.picUrl" alt="">
         </div>
       </a>
     </div>

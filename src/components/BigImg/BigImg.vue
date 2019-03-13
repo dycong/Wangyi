@@ -4,7 +4,7 @@
       <a href="">
         <div class="avatar">
           <span class="ava">
-            <img :src="topic.avatar" alt="">
+            <img v-lazy="topic.avatar" alt="">
           </span>
           <span>{{topic.nickname}}</span>
         </div>
@@ -12,7 +12,7 @@
           {{topic.title}}
         </div>
         <div class="pic">
-          <img :src="topic.picUrl" alt="">
+          <img v-lazy="topic.picUrl" alt="">
         </div>
         <div class="watch">
           <i class="icon iconfont icon-tuxiangshibie"></i>

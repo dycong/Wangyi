@@ -3,7 +3,7 @@
     <div class="right-wrap">
       <div class="content">
         <div class="banner">
-          <img :src="RightLists.wapBannerUrl" alt="">
+          <img v-lazy="RightLists.wapBannerUrl" alt="">
         </div>
         <div class="cateList">
           <ul class="lists">

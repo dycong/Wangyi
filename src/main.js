@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import VueLazyload from 'vue-lazyload'
+import loading from './images/loading.gif'
 
 
 import Mint from 'mint-ui'
@@ -11,13 +12,11 @@ import './mock/mockServer'
 import LoginTemplate from './components/LoginTemplate/LoginTemplate.vue'
 
 Vue.component('LoginTemplate', LoginTemplate)
-Vue.use(Mint)
-
 Vue.use(VueLazyload, {
-  preLoad: 1.1,
-  error: require('../static/error.jpg'),
-  loading: require('../static/loading.gif')
+  loading:loading
 })
+
+Vue.use(Mint)
 
 /* eslint-disable no-new */
 new Vue({

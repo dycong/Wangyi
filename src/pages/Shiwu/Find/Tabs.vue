@@ -1,78 +1,149 @@
 <template>
   <div class="container">
-
     <!--推荐-->
-    <div class="content" v-if="tabId === 0">
-      <div v-for="(item, index) in Manual" :key="index">
-        <li v-for="(topic, index) in item.topics" :key="index" >
-          <BigImg v-if="topic.style === 1" :topic="topic"/>
-          <SmallImg v-if="topic.style === 2" :topic="topic"/>
-        </li>
+    <div class="content-wrap" v-if="tabId === 0">
+      <div class="content">
+        <div class="tuijian" v-for="(item, index) in Manual" :key="index">
+          <li v-for="(topic, index) in item.topics" :key="index">
+            <BigImg v-if="topic.style === 1" :topic="topic"/>
+            <SmallImg v-if="topic.style === 2" :topic="topic"/>
+          </li>
+        </div>
       </div>
     </div>
+
     <!--女王节礼物-->
-    <div class="content" v-if="tabId === 1">
-      <div v-for="(item, index) in Manual" :key="index">
-        <li v-for="(topic, index) in item.topics" :key="index" >
-          <BigImg v-if="topic.style === 2" :topic="topic"/>
-          <SmallImg v-if="topic.style === 1" :topic="topic"/>
-        </li>
+    <div class="content-wrap" v-if="tabId === 1">
+      <div class="content">
+        <div v-for="(item, index) in Manual" :key="index">
+          <li v-for="(topic, index) in item.topics" :key="index">
+            <BigImg v-if="topic.style === 2" :topic="topic"/>
+            <SmallImg v-if="topic.style === 1" :topic="topic"/>
+          </li>
+        </div>
       </div>
     </div>
+
     <!--收纳秘诀-->
-    <div class="content" v-if="tabId === 2">
-      收纳秘诀
-    </div>
+    <div class="content-wrap" v-if="tabId === 2"></div>
+
     <!--晒单-->
-    <div class="content" v-if="tabId === 3">
-      晒单
+    <div class="content-wrap shaidan-wrap" v-if="tabId === 3">
+      <div class="content">
+        <div class="shaidan-top">
+          <p class="title">让生活更好的N种方式</p>
+          <p class="desc">{{ShaiDanCollection.title}}</p>
+          <div class="picWall">
+            <ul>
+              <li class="item" :style="{backgroundImage:'url('+List.banner.picUrl+')'}" v-for="(List, index) in ShaiDanCollection.lookList" :key="index"></li>
+            </ul>
+          </div>
+        </div>
+        <div class="shaidan-bottom">
+          <p class="title">TA们的严选生活</p>
+          <div class="ul-wrap">
+            <ul>
+              <li><p class="active">最新</p></li>
+              <li><p>本月最热</p></li>
+              <li><p>晒单合辑</p></li>
+            </ul>
+          </div>
+          <div class="item-wrap">
+            <ul>
+              <li v-if="index%2 === 0" v-for="(item, index) in ShaiDanLists" :key="index">
+                <ShaidanBigImg v-if="!item.isCollection" :item="item"/>
+              </li>
+            </ul>
+            <ul>
+              <li v-if="index%2 === 1" v-for="(item, index) in ShaiDanLists" :key="index">
+                <ShaidanBigImg :item="item"/>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
     <!--达人-->
-    <div class="content" v-if="tabId === 4">
-      <div v-for="(item, index) in Manual" :key="index">
-        <li v-for="(topic, index) in item.topics" :key="index" >
+    <div class="content-wrap" v-if="tabId === 4">
+      <div class="content">
+        <li v-for="(topic, index) in Talent" :key="index">
           <BigImg v-if="topic.style === 1" :topic="topic"/>
           <SmallImg v-if="topic.style === 2" :topic="topic"/>
         </li>
       </div>
     </div>
+
     <!--HOME-->
-    <div class="content" v-if="tabId === 5">
-      <div>
-        <li v-for="(item, index) in Home" :key="index" >
+    <div class="content-wrap" v-if="tabId === 5">
+      <div class="content">
+        <li v-for="(item, index) in Home" :key="index">
           <Home :item="item"/>
         </li>
       </div>
     </div>
-
   </div>
 </template>
 
 <script>
-  import {reqShiwuData} from '../../../api/index'
+  import {
+    reqShiwuData,
+    reqShiwuTuijian,
+    reqShaiDanCollection,
+    reqShaiDanList
+  } from '../../../api/index'
+  import BScroll from 'better-scroll'
 
   import BigImg from '../../../components/BigImg/BigImg.vue'
   import SmallImg from '../../../components/SmallImg/SmallImg.vue'
   import Home from '../../../components/Home/Home.vue'
+  import ShaidanBigImg from '../../../components/ShaidanBigImg/ShaidanBigImg.vue'
 
   export default {
     data () {
       return {
         Manual: [],
-        Home:[],
-        Talent:[]
+        Home: [],
+        Talent: [],
+        ShaiDanLists: [],
+        ShaiDanCollection: []
+      }
+    },
+    methods: {
+      _initScroll () {
+        new BScroll('.picWall', {
+          scrollX: true,
+        })
       }
     },
     async mounted () {
-      const result = await reqShiwuData()
+      // 推荐数据
+      const result1 = await reqShiwuTuijian()
+      this.Manual = result1.data
 
-      this.Manual = result.data.Manual.data
-      this.Home = result.data.Home.data.result
-      this.Talent = result.data.Talent
-      console.log('this.Talent', this.Talent)
-      // console.log('this.Home',this.Home)
-      // console.log('this.Manual---',this.Manual)
-      // console.log(this.Manual[0].topics)
+      // 达人，HOME
+      const result2 = await reqShiwuData()
+      this.Home = result2.data.Home.data.result
+      this.Talent = result2.data.Talent.data.result
+
+      // 晒单评论列表
+      const ShaiDanLists = await reqShaiDanList()
+      this.ShaiDanLists = ShaiDanLists.data.topicList
+
+      // 晒单图片列表
+      const ShaiDanCollection = await reqShaiDanCollection()
+      this.ShaiDanCollection = ShaiDanCollection.data
+
+      this.$nextTick(() => {
+        let PullUp = new BScroll('.content-wrap',{
+          probeType:3,
+          pullUpLoad:true
+        })
+        PullUp.on('pullingUp',async () => {
+          console.log('aaa')
+          PullUp.finishPullUp()
+        })
+        PullUp.refresh()
+      })
 
     },
     computed: {
@@ -91,10 +162,21 @@
       }
     },
 
+    updated () {
+      if (this.tabId !== 3) {
+      } else {
+        this.$nextTick(() => {
+          this._initScroll()
+        })
+      }
+    },
+    watch: {},
+
     components: {
       BigImg,
       SmallImg,
-      Home
+      Home,
+      ShaidanBigImg
     }
   }
 </script>
@@ -102,111 +184,119 @@
 <style lang="stylus" rel="stylesheet/stylus" scoped>
   .container
     background #ddd
-
-    Header
-      z-index 20
-      width 100%
-      position: fixed
-      height 100px
-      background #fafafa
-      border-bottom 0.02rem solid #d9d9d9
-      left 0
-      top 0
-
-      .header-wrap
-        position: relative
-        overflow hidden
-        padding 0 0.52rem 0 0.4rem
-        width 100%
-        height 100px
-
-        .home
-          display block
-          float left
-          height 100px
-
-          a
-            height 100px
-            margin-top 0.25rem
-            position: relative
-            background-size 0.46rem 0.46rem
-            width 0.92rem
-            display block
-
-        .center
-          width 6.4rem
-          height 100px
-          line-height 1.3rem
-          text-align: center
-          left 50%
-          top 0
-          margin-left -3.2rem
-          font-size 0.4rem
-          color #7f7f7f
-          z-index 2
-          position: absolute
-
-          .item
-            height 100px
-            padding 0 0.16rem
-            vertical-align middle
-
-          .active
-            height 100px
-            color #b4282d
-            font-weight bold
-            font-size 0.5rem
-
-        .right
-          height 100px
-          float right
-          margin-right 0.04rem
-          display block
-
-    .list
-      z-index 20
+    .content-wrap
+      margin-top 180px
+      height 16rem
+      /*margin-bottom 100px*/
+    .shaidan-wrap
       display flex
-      width 100%
-      overflow hidden
-      height 72px
-      background #fafafa
-      border-bottom 0.01rem solid #d9d9d9
-      position: fixed
-      left 0
-      top 100px
+      flex-direction column
 
-      .list-wrap
-        flex 5
+      .shaidan-top
+        background #fff
+        padding-top 0.37333rem
+        margin-bottom 0.26667rem
+        padding-bottom 0.53333rem
+
+        .title
+          text-align: center
+          font-size 0.4rem
+          height 0.5333rem
+          line-height 0.5333rem
+          color #7f7f7f
+          margin-bottom 0.32rem
+
+        .desc
+          position: relative
+          text-align: center
+          max-width 12rem
+          font-size 0.5rem
+          line-height 0.64rem
+          color #333
+          overflow hidden
+          text-overflow ellipsis
+
+        .picWall
+          width 750px
+          height 3.2rem
+          margin-top 0.6rem
+          display flex
+          overflow hidden
+
+          ul
+            display flex
+
+            .item
+              display inline-block
+              float left
+              width 3.2rem
+              height 3.2rem
+              border-radius 10px
+              overflow hidden
+              background-image url("https://yanxuan.nosdn.127.net/44ded9b669fc83f7e7eeda049dd0303a.jpg")
+              background-size 100% 100%
+              background-repeat no-repeat
+              margin-left 0.2rem
+
+
+      .shaidan-bottom
         display flex
-        overflow hidden
-        padding-right 1.3333rem
-        width 100%
-        box-sizing content-box
-        height 72px
-        padding-bottom 20px
+        flex-direction column
+        align-items center
+        background #fff
+        padding-top 0.7rem
+
+        > .title
+          color #333
+          height 0.46rem
+          line-height 0.46rem
+          font-size 0.43rem
+          margin 0.27rem
+          font-weight bold
+
+        .ul-wrap
+          width 750px
+          height 1.76rem
+          padding-top 0.32rem
+
+          ul
+            width 750px
+            display flex
+            justify-content center
+            align-items center
+            background #fff
+
+            li
+              width 2.3rem
+              height 1.6rem
+              margin 0 0.32rem
+              padding 0.43rem 0
+
+              p
+                width 2.3rem
+                height 0.75rem
+                line-height 0.75rem
+                text-align: center
+                font-size 0.37333rem
+
+                &.active
+                  background-color #ffe4af
+                  color #b0955f
+                  font-weight bold
+
 
         .item-wrap
-          white-space nowrap
+          width 750px
+          margin-top 0.27rem
           display flex
-          height 100%
 
-          .item
-            height 72px
-            line-height 72px
-            font-size 0.4rem
-            padding 0 0.08rem
-            margin 0 0.2rem
-            vertical-align middle
-            display inline-block
+          ul
+            width 375px
+            display flex
+            flex-direction column
+            align-items center
 
-            &.active
-              border-bottom 0.04rem solid #B4282D
-              color #B4282D
-
-    .content
-      margin-top 180px
-      margin-bottom 100px
 
   .iconfont
-    font-size 50px
+    font-size 30px
 </style>

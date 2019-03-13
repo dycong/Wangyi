@@ -30,12 +30,13 @@
         </div>
       </div>
     </div>
+
     <RouterView/>
   </div>
 </template>
 
 <script>
-  import {reqShiwuData} from '../../../api/index'
+  import {reqShiwuTabs} from '../../../api/index'
   import BScroll from 'better-scroll'
 
   export default {
@@ -45,8 +46,8 @@
       }
     },
     async mounted () {
-      const result = await reqShiwuData()
-      this.tabs = result.data.tabs.data
+      const result = await reqShiwuTabs()
+      this.tabs = result.data
 
       this.$nextTick(() => {
         this._initScroll()

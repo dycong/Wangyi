@@ -19,8 +19,10 @@
       <div class="left">
         <div class="left-wrap">
           <ul>
+            <!--:class="LeftList.id === Number($route.query.id) ? 'active' : ''"-->
             <li v-for="(LeftList, index) in LeftLists" :key="index"
-                :class="LeftList.id === Number($route.query.id) ? 'active' : ''">
+                :class="{active:num === index}"
+                @click="alive(index)">
               <router-link :to="`/sort/sortList?id=${LeftList.id}`">
                 <a href="">{{LeftList.name}}</a>
               </router-link>
@@ -42,10 +44,13 @@
     data () {
       return {
         LeftLists: [],
-
+        num:''
       }
     },
     methods: {
+      alive(indexs) {
+        this.num = indexs
+      },
       // 初始化滑动
       _initScroll () {
         new BScroll('.left-wrap', {
@@ -61,6 +66,7 @@
       this.$nextTick(() => {
         this._initScroll()
       })
+      this.alive(0)
     },
     components: {
       SortList
