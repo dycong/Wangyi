@@ -1,6 +1,4 @@
-/*
-包含所有路由数组的模块
- */
+/*包含所有路由数组的模块*/
 const Home = () => import('../pages/Home/Home.vue')
 const Sort = () => import('../pages/Sort/Sort.vue')
 const SortList = () => import('../pages/Sort/SortList.vue')
@@ -11,11 +9,9 @@ const Find = () => import('../pages/Shiwu/Find/Find.vue')
 const Zhenxuan = () => import('../pages/Shiwu/Zhenxuan/Zhenxuan.vue')
 
 import Tabs from '../pages/Shiwu/Find/Tabs.vue'
-
 import Phone from '../pages/Personal/Phone.vue'
 import Email from '../pages/Personal/Email.vue'
 import Register from '../pages/Personal/Register.vue'
-
 
 export default [
   {
