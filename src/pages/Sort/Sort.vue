@@ -12,7 +12,6 @@
           </div>
         </div>
       </div>
-
     </Header>
 
     <Content>
@@ -41,8 +40,7 @@
   export default {
     data () {
       return {
-        LeftLists: [],
-
+        LeftLists: []
       }
     },
     methods: {
@@ -55,7 +53,7 @@
     },
     async mounted () {
       const result = await reqSortList()
-      // console.log('result',result)
+      console.log('result',result)
       this.LeftLists = result.data.categoryL1List
 
       this.$nextTick(() => {

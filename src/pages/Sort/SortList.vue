@@ -28,7 +28,7 @@
     data () {
       return {
         // RightLists: [],
-        LeftLists:[],
+        LeftLists:[]
       }
     },
     computed: {
@@ -41,7 +41,7 @@
             return res
           }
         }
-      },
+      }
     },
     async mounted () {
       const result = await reqSortList()
@@ -52,30 +52,12 @@
       })
     },
     methods: {
-      /* async categoryL2 () {
-		 const result =await reqSortList()
-		 console.log('result', result)
-
-		 if (result.data.categoryL1List) {
-		   const res = result.data.categoryL1List.find(item => item.id === this.$route.query.categoryId * 1)
-		   if (!res) {
-			 this.RightLists = result.data.categoryL1List[0]
-			 // return result.data.categoryL1List[0]
-		   } else {
-			 this.RightLists = res
-			 // return res
-		   }
-		 }
-
-	   },*/
-
       _initScroll () {
         new BScroll('.right-wrap', {
           click: true
         })
       }
-    },
-
+    }
   }
 </script>
 
